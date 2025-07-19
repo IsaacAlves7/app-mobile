@@ -1,5 +1,7 @@
 <div align="center"><img src="https://developer.android.com/static/images/social/android-developers.png?hl=pt-br" height="377"></div>
 
+Surgido em 2008, o **Android** foi desenvolvido inicialmente pela Android Inc. e comprado pelo Google, sendo lançado como um sistema operacional open-source baseado em Linux. Durante anos, o desenvolvimento foi feito em **Java**, com interfaces construídas em XML e arquitetura baseada em componentes do ciclo de vida como Activities, Fragments e Services. Com o tempo, o ecossistema evoluiu com o surgimento do Android Studio, substituindo o Eclipse como IDE oficial, e a introdução de novos paradigmas como o **Kotlin**, que se tornou linguagem oficial em 2017. Hoje, o Android é a plataforma móvel mais usada no mundo, e seu desenvolvimento continua sendo modernizado constantemente.
+
 <img src="https://user-images.githubusercontent.com/61624336/215551549-e4417fe8-c7bf-4df0-a3f9-dfad656fef85.png" height="227" align="right">
 
 As ferramentas mostradas na imagem são componentes fundamentais do ecossistema de desenvolvimento Android mantido pelo Google, cada uma com uma função específica no processo de criação, construção e publicação de aplicativos móveis. Elas representam as tecnologias e práticas modernas recomendadas para criar aplicações Android eficientes, modulares e com experiência de usuário fluida.
