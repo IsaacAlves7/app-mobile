@@ -15,3 +15,7 @@ O **Jetpack Compose** é o moderno toolkit de UI declarativa do Android, baseado
 O **Android App Bundle** (.aab) é o formato oficial de empacotamento de aplicativos para distribuição no Google Play. Diferente do tradicional APK, o App Bundle permite que o Google Play gere versões otimizadas do app para cada dispositivo, contendo apenas os recursos e configurações necessários. Isso reduz o tamanho final do download e melhora o desempenho da instalação, beneficiando tanto usuários quanto desenvolvedores. Desde agosto de 2021, o App Bundle é obrigatório para novos apps publicados na loja.
 
 Juntas, essas ferramentas formam o alicerce do desenvolvimento Android moderno. O Android Studio oferece o ambiente, o Jetpack fornece os componentes arquiteturais, o Compose revoluciona o design da interface e o App Bundle garante distribuição eficiente. Usá-las em conjunto permite criar aplicativos mais rápidos, seguros, bonitos e escaláveis, acompanhando a evolução da plataforma e as expectativas dos usuários.
+
+# [Android] Google Play Store
+
+# [iOS] Apple App Store
