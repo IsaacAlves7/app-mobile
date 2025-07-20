@@ -3,11 +3,21 @@
 # It's a repository of App Mobile development 📱
 <img src="https://cdn.worldvectorlogo.com/logos/android-4.svg" height="77" align="right">
 
+Desenvolver aplicativos mobile de forma nativa oferece vantagens significativas de performance em comparação ao desenvolvimento multiplataforma híbrido. Quando se desenvolve de forma nativa — usando Kotlin ou Java para Android e Swift ou Objective-C para iOS — o código é compilado diretamente para o sistema operacional, o que proporciona acesso total aos recursos do dispositivo, melhor otimização de memória, renderização mais fluida e menor tempo de resposta. Isso se reflete em transições mais suaves, menor latência em animações, carregamento mais rápido de dados e, principalmente, em uma experiência do usuário mais consistente com o sistema.
+
+Por outro lado, as soluções híbridas — como aquelas construídas com Ionic, Cordova, ou até algumas abordagens do React Native ou Flutter em modo bridge — embora ofereçam ganho em produtividade por permitir a escrita de um único código para várias plataformas, ainda sofrem com certas limitações. Isso inclui maior consumo de recursos, maior tempo de inicialização da aplicação e mais dependência de bridges entre o código JavaScript/Dart e o código nativo, o que pode introduzir gargalos de desempenho, especialmente em aplicativos que exigem acesso intensivo a sensores, câmera, Bluetooth ou operações gráficas pesadas.
+
+Aplicações nativas também têm melhor suporte a atualizações do sistema, integração mais profunda com APIs específicas da plataforma e maior controle sobre threads, consumo de energia e gerenciamento de estado. Já soluções híbridas, por dependerem de camadas intermediárias, às vezes ficam atrás em compatibilidade com novidades do sistema operacional, exigindo atualizações adicionais das próprias bibliotecas que as sustentam.
+
+Apesar disso, vale dizer que ferramentas modernas de desenvolvimento multiplataforma vêm evoluindo rapidamente e, em muitos casos de uso comum, a diferença de performance não é perceptível para o usuário final. Contudo, para aplicações críticas em performance — como jogos, apps de realidade aumentada, editores de mídia, ferramentas que lidam com muitos dados em tempo real ou exigem altíssimo desempenho gráfico — o desenvolvimento nativo continua sendo a melhor escolha.
+
+Portanto, embora o desenvolvimento híbrido tenha seu espaço pela agilidade e redução de custos, o desenvolvimento nativo se destaca quando o foco é performance, estabilidade e integração total com a plataforma-alvo.
+
 Surgido em 2008, o **Android** foi desenvolvido inicialmente pela Android Inc. e comprado pelo Google, sendo lançado como um sistema operacional open-source baseado em Linux. Durante anos, o desenvolvimento foi feito em **Java**, com interfaces construídas em XML e arquitetura baseada em componentes do ciclo de vida como Activities, Fragments e Services. Com o tempo, o ecossistema evoluiu com o surgimento do Android Studio, substituindo o Eclipse como IDE oficial, e a introdução de novos paradigmas como o **Kotlin**, que se tornou linguagem oficial em 2017. Hoje, o Android é a plataforma móvel mais usada no mundo, e seu desenvolvimento continua sendo modernizado constantemente.
 
-<img src="https://user-images.githubusercontent.com/61624336/215551549-e4417fe8-c7bf-4df0-a3f9-dfad656fef85.png" height="227" align="right">
-
 As ferramentas mostradas na imagem são componentes fundamentais do ecossistema de desenvolvimento Android mantido pelo Google, cada uma com uma função específica no processo de criação, construção e publicação de aplicativos móveis. Elas representam as tecnologias e práticas modernas recomendadas para criar aplicações Android eficientes, modulares e com experiência de usuário fluida.
+
+<img src="https://user-images.githubusercontent.com/61624336/215551549-e4417fe8-c7bf-4df0-a3f9-dfad656fef85.png" height="227" align="right">
 
 O **Android Studio** é o ambiente de desenvolvimento integrado (IDE) oficial para o desenvolvimento Android. Baseado no IntelliJ IDEA, ele fornece uma interface completa para escrever, testar e depurar aplicativos. Com suporte total a Kotlin e Java, além de ferramentas como o emulador Android, o Android Studio facilita a criação de interfaces, a visualização de layouts e a análise de desempenho, reunindo tudo que o desenvolvedor precisa em um único lugar.
 
