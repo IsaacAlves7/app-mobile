@@ -22,3 +22,7 @@ Juntas, essas ferramentas formam o alicerce do desenvolvimento Android moderno. 
 # [Android] Google Play Store
 
 # [iOS] Apple App Store
+
+# [Android] Android Auto
+
+# [iOS] Carplay
