@@ -1,5 +1,6 @@
 <div align="center"><a href="https://github.com/IsaacAlves7/app-mobile"><img src="https://github.com/user-attachments/assets/f50df354-4399-4ebf-8dcb-ce672de81dbc" width="100%"></a></div>
 
+# It's a repository of App Mobile development 📱
 <img src="https://cdn.worldvectorlogo.com/logos/android-4.svg" height="77" align="right">
 
 Surgido em 2008, o **Android** foi desenvolvido inicialmente pela Android Inc. e comprado pelo Google, sendo lançado como um sistema operacional open-source baseado em Linux. Durante anos, o desenvolvimento foi feito em **Java**, com interfaces construídas em XML e arquitetura baseada em componentes do ciclo de vida como Activities, Fragments e Services. Com o tempo, o ecossistema evoluiu com o surgimento do Android Studio, substituindo o Eclipse como IDE oficial, e a introdução de novos paradigmas como o **Kotlin**, que se tornou linguagem oficial em 2017. Hoje, o Android é a plataforma móvel mais usada no mundo, e seu desenvolvimento continua sendo modernizado constantemente.
