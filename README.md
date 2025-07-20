@@ -1,4 +1,4 @@
-<div align="center"><a href="https://github.com/IsaacAlves7/app-mobile"><img src="https://developer.android.com/static/images/social/android-developers.png?hl=pt-br" height="377"></a></div>
+<div align="center"><a href="https://github.com/IsaacAlves7/app-mobile"><img src="https://developer.android.com/static/images/social/android-developers.png?hl=pt-br" width="100%" height="377"></a></div>
 
 <img src="https://cdn.worldvectorlogo.com/logos/android-4.svg" height="77" align="right">
 
