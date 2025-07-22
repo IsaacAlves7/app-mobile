@@ -1,6 +1,8 @@
 <div align="center"><a href="https://github.com/IsaacAlves7/app-mobile"><img src="https://github.com/user-attachments/assets/f50df354-4399-4ebf-8dcb-ce672de81dbc" width="100%"></a></div>
 
 # It's a repository of App Mobile development 📱
+<a href="https://javascript.info"><img src="https://img.shields.io/badge/Figma-prototyping-tomato?style=flat&logo=Figma&logoColor=white"></a> <a href="https://github.com/ryanmcdermott/clean-code-javascript"><img src="https://img.shields.io/badge/Mural-templates-tomato?style=flat&logo=Mural&logoColor=white"></a> 
+
 <img src="https://cdn.worldvectorlogo.com/logos/android-4.svg" height="77" align="right">
 
 O **desenvolvimento mobile** teve início com a popularização dos primeiros dispositivos móveis capazes de executar software além das funções básicas de chamada e mensagens. No final dos anos 1990 e início dos anos 2000, aparelhos como o Palm Pilot e os primeiros smartphones com Symbian OS já permitiam a execução de aplicativos simples, muitas vezes desenvolvidos por empresas específicas para tarefas corporativas como agenda, e-mail e planilhas. A necessidade do mercado naquela época girava em torno da mobilidade de profissionais que precisavam acessar informações fora do ambiente de trabalho tradicional. Eram sistemas fechados, limitados, com interfaces pouco amigáveis e acesso restrito à internet, refletindo a infraestrutura da época.
