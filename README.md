@@ -1,7 +1,7 @@
 <div align="center"><a href="https://github.com/IsaacAlves7/app-mobile"><img src="https://github.com/user-attachments/assets/f50df354-4399-4ebf-8dcb-ce672de81dbc" width="100%"></a></div>
 
 # It's a repository of App Mobile development 📱
-<a href="https://javascript.info"><img src="https://img.shields.io/badge/Figma-prototyping-tomato?style=flat&logo=Figma&logoColor=white"></a> <a href="https://github.com/ryanmcdermott/clean-code-javascript"><img src="https://img.shields.io/badge/Mural-templates-tomato?style=flat&logo=Mural&logoColor=white"></a> 
+<a href="https://javascript.info"><img src="https://img.shields.io/badge/Figma-prototyping-tomato?style=flat&logo=Figma&logoColor=white"></a> <a href="https://github.com/ryanmcdermott/clean-code-javascript"><img src="https://img.shields.io/badge/Mural-templates-tomato?style=flat&logo=Mural&logoColor=white"></a> <a href="https://github.com/ryanmcdermott/clean-code-javascript"><img src="https://img.shields.io/badge/Moqups-metrics-tomato?style=flat&logo=Moqups&logoColor=white"></a> 
 
 <img src="https://cdn.worldvectorlogo.com/logos/android-4.svg" height="77" align="right">
 
