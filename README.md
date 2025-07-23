@@ -43,6 +43,14 @@ O **Android App Bundle** (.aab) é o formato oficial de empacotamento de aplicat
 
 Juntas, essas ferramentas formam o alicerce do desenvolvimento Android moderno. O Android Studio oferece o ambiente, o Jetpack fornece os componentes arquiteturais, o Compose revoluciona o design da interface e o App Bundle garante distribuição eficiente. Usá-las em conjunto permite criar aplicativos mais rápidos, seguros, bonitos e escaláveis, acompanhando a evolução da plataforma e as expectativas dos usuários.
 
+Podemos construir um aplicativo mobile do zero exatamente como construímos uma interface front-end para web, consumindo os dados e recursos expostos por uma API de um back-end web. Nesse cenário, o app funciona como um cliente que se comunica com servidores remotos por meio de requisições HTTP (ou HTTPS), geralmente no padrão REST ou GraphQL. O aplicativo é responsável por apresentar os dados ao usuário, capturar suas interações e enviar informações de volta ao servidor, exatamente como faria um navegador acessando uma página web dinâmica.
+
+Ao desenvolver esse tipo de app mobile, o front-end é implementado com tecnologias específicas para a plataforma desejada — seja com código nativo (Swift/Objective-C para iOS, Kotlin/Java para Android) ou com frameworks multiplataforma como Flutter, React Native ou Xamarin, que permitem escrever uma única base de código para rodar em ambos os sistemas operacionais. A comunicação com a API web normalmente se dá através de bibliotecas como `fetch` ou `axios` no React Native, `http` no Flutter, `Retrofit` no Android, ou mesmo chamadas assíncronas em Swift usando `URLSession`.
+
+A API web back-end, por sua vez, pode ser construída com qualquer stack — Node.js, Django, ASP.NET, Spring Boot, Rails, entre outros — e tem a função de armazenar, processar e entregar dados ao app, além de lidar com autenticação, autorização, persistência e lógica de negócio. A separação entre front-end (app mobile) e back-end (API) torna o sistema mais escalável, modular e reutilizável. É possível, inclusive, que a mesma API sirva múltiplos clientes: o app mobile, um painel web, uma aplicação de desktop ou até outras APIs e serviços.
+
+Portanto, sim, desenvolver um app mobile moderno é perfeitamente viável dentro dessa arquitetura desacoplada, em que o aplicativo atua como consumidor de uma API web back-end, fazendo uso dos recursos, dados e funcionalidades expostos remotamente. Esse modelo de arquitetura orientado a serviços é o que sustenta a maioria dos aplicativos que usamos no dia a dia, de redes sociais e bancos a mensageiros e plataformas de streaming.
+
 # [Android] Google Play Store
 
 # [iOS] Apple App Store
