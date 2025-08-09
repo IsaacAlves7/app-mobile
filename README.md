@@ -88,3 +88,4 @@ No geral, não é um “espelhamento” puro como um cast ou screen mirroring �
 Se quiser, posso detalhar mais sobre os protocolos de comunicação usados, exemplos de APIs para desenvolvedores, ou até explicar as diferenças entre as versões cabeadas e sem fio dessas tecnologias.
 
 # [iOS] Carplay
+<img src="https://github.com/user-attachments/assets/2a317f77-9210-4361-9a7c-95c3650e9bde" height="77" align="right">
