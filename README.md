@@ -64,10 +64,28 @@ A API web back-end, por sua vez, pode ser construída com qualquer stack — Nod
 
 Portanto, sim, desenvolver um app mobile moderno é perfeitamente viável dentro dessa arquitetura desacoplada, em que o aplicativo atua como consumidor de uma API web back-end, fazendo uso dos recursos, dados e funcionalidades expostos remotamente. Esse modelo de arquitetura orientado a serviços é o que sustenta a maioria dos aplicativos que usamos no dia a dia, de redes sociais e bancos a mensageiros e plataformas de streaming.
 
-# [Android] Google Play Store
+# [Android] TDD, BDD e DDD
 
-# [iOS] Apple App Store
+# [iOS] TDD, BDD e DDD
+
+# [Android] Deployment - Google Play Store
+
+# [iOS] Deployment - Apple App Store
 
 # [Android] Android Auto
+<img src="https://github.com/user-attachments/assets/7bbe0f28-e750-450c-8e49-6ab14f756423" height="77" align="right">
+
+**Android Auto** e Apple CarPlay vão muito além de um simples espelhamento do smartphone na tela do carro, eles são plataformas projetadas para integrar o sistema móvel com o sistema multimídia do veículo de forma segura, responsiva e otimizada para uso enquanto dirige.
+
+No âmbito técnico, ambos funcionam por meio de uma arquitetura cliente-servidor, onde o smartphone atua como o servidor principal, processando os dados e rodando os apps, enquanto o head unit (a central multimídia do carro) é o cliente que exibe a interface adaptada para o ambiente automotivo. Essa separação permite que o processamento pesado e a lógica fiquem no telefone, enquanto a tela do veículo serve principalmente para entrada e saída de interface de usuário, garantindo baixa latência e melhor performance.
+
+A comunicação entre smartphone e head unit pode ser feita via cabo USB ou, em versões mais recentes, por conexão sem fio via Wi-Fi Direct e Bluetooth. Protocolos específicos são usados para transportar áudio, vídeo e dados de controle, garantindo sincronização e qualidade. No Android Auto, por exemplo, o protocolo de transporte utiliza AOA (Android Open Accessory) quando conectado por cabo e Wi-Fi Direct para wireless, enquanto no CarPlay a Apple utiliza protocolos proprietários baseados em USB e Wi-Fi.
+
+As interfaces são desenvolvidas para serem simples, com poucos elementos e comandos de voz robustos, para minimizar distrações. Ambas as plataformas expõem APIs que permitem aos desenvolvedores criar apps compatíveis, que passam por rígidos processos de certificação para garantir segurança e usabilidade, principalmente em relação ao acesso a funcionalidades como navegação, chamadas, mensagens e mídia.
+
+No geral, não é um “espelhamento” puro como um cast ou screen mirroring — é uma integração profunda e personalizada, onde o smartphone é o cérebro, e a central multimídia é uma tela e interface de controle dedicada, com protocolos especializados que mantêm segurança, baixa latência e melhor experiência de usuário para quem está dirigindo.
+
+Se quiser, posso detalhar mais sobre os protocolos de comunicação usados, exemplos de APIs para desenvolvedores, ou até explicar as diferenças entre as versões cabeadas e sem fio dessas tecnologias.
 
 # [iOS] Carplay
+<img src="https://github.com/user-attachments/assets/2a317f77-9210-4361-9a7c-95c3650e9bde" height="77" align="right">
