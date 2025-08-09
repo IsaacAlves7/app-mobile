@@ -75,7 +75,13 @@ Portanto, sim, desenvolver um app mobile moderno é perfeitamente viável dentro
 # [Android] Android Auto
 <img src="https://github.com/user-attachments/assets/7bbe0f28-e750-450c-8e49-6ab14f756423" height="77" align="right">
 
-**Android Auto** e Apple CarPlay vão muito além de um simples espelhamento do smartphone na tela do carro, eles são plataformas projetadas para integrar o sistema móvel com o sistema multimídia do veículo de forma segura, responsiva e otimizada para uso enquanto dirige.
+O **Android Auto** é uma plataforma desenvolvida pelo Google que permite a integração do smartphone Android com o sistema multimídia dos veículos, oferecendo uma interface simplificada e otimizada para o uso durante a condução. Diferente de um espelhamento tradicional da tela do celular, o Android Auto funciona de forma que o processamento dos dados e execução dos aplicativos ocorre no próprio smartphone, enquanto o display do carro atua como uma interface de controle, exibindo informações e recebendo comandos de toque, voz ou botões físicos.
+
+A conexão entre o smartphone e o sistema do veículo pode ser feita por cabo USB ou, em modelos mais recentes, via conexão sem fio usando Wi-Fi Direct e Bluetooth. A comunicação entre os dispositivos utiliza protocolos específicos, como o Android Open Accessory (AOA) para conexões cabeadas, garantindo a transmissão eficiente de áudio, vídeo e dados de controle com baixa latência.
+
+A plataforma prioriza a segurança e a usabilidade, oferecendo suporte a aplicativos compatíveis como navegação (Google Maps, Waze), música (Spotify, YouTube Music), chamadas telefônicas e mensagens, todos adaptados para minimizar distrações ao motorista. Além disso, o Android Auto possui integração com o Google Assistente, permitindo controle por voz para maior comodidade e segurança.
+
+*Android Auto* e Apple CarPlay vão muito além de um simples espelhamento do smartphone na tela do carro, eles são plataformas projetadas para integrar o sistema móvel com o sistema multimídia do veículo de forma segura, responsiva e otimizada para uso enquanto dirige.
 
 No âmbito técnico, ambos funcionam por meio de uma arquitetura cliente-servidor, onde o smartphone atua como o servidor principal, processando os dados e rodando os apps, enquanto o head unit (a central multimídia do carro) é o cliente que exibe a interface adaptada para o ambiente automotivo. Essa separação permite que o processamento pesado e a lógica fiquem no telefone, enquanto a tela do veículo serve principalmente para entrada e saída de interface de usuário, garantindo baixa latência e melhor performance.
 
@@ -87,5 +93,11 @@ No geral, não é um “espelhamento” puro como um cast ou screen mirroring �
 
 Se quiser, posso detalhar mais sobre os protocolos de comunicação usados, exemplos de APIs para desenvolvedores, ou até explicar as diferenças entre as versões cabeadas e sem fio dessas tecnologias.
 
-# [iOS] Carplay
+# [iOS] CarPlay
 <img src="https://github.com/user-attachments/assets/2a317f77-9210-4361-9a7c-95c3650e9bde" height="77" align="right">
+
+O **Apple CarPlay** é uma plataforma desenvolvida pela Apple que permite a integração do iPhone com o sistema multimídia do veículo, proporcionando uma interface otimizada para uso durante a condução. Diferente de um simples espelhamento da tela do celular, o CarPlay oferece acesso seguro e simplificado a funções essenciais do iPhone, como navegação, chamadas telefônicas, mensagens, música e assistente de voz Siri, tudo adaptado para minimizar distrações ao volante.
+
+Tecnicamente, o CarPlay funciona como uma extensão do iOS, onde o iPhone atua como o “cérebro” que processa as informações, enquanto o sistema do carro exibe a interface e aceita comandos do motorista, seja via toque, botões físicos ou comandos de voz. A comunicação entre o iPhone e o veículo ocorre geralmente por cabo USB, mas muitos carros modernos já suportam CarPlay sem fio, usando conexões Wi-Fi e Bluetooth proprietárias da Apple.
+
+Para garantir segurança e usabilidade, os aplicativos compatíveis com CarPlay precisam seguir diretrizes específicas da Apple e passam por um processo de aprovação. Além disso, o sistema limita o acesso a apps que possam distrair o motorista, privilegiando funções que auxiliam na condução e comunicação de forma intuitiva e segura.
