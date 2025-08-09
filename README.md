@@ -85,6 +85,34 @@ No desenvolvimento iOS, as práticas de TDD, BDD e DDD também são fundamentais
 
 Ao combinar essas abordagens, um projeto iOS ganha em qualidade, clareza e alinhamento com o negócio: o DDD orienta a estrutura e modelagem do sistema, o TDD garante a confiabilidade técnica, e o BDD conecta o desenvolvimento ao comportamento esperado pelo usuário.
 
+# [Android] Android Auto
+<img src="https://github.com/user-attachments/assets/7bbe0f28-e750-450c-8e49-6ab14f756423" height="77" align="right">
+
+O **Android Auto** é uma plataforma desenvolvida pelo Google que permite a integração do smartphone Android com o sistema multimídia dos veículos, oferecendo uma interface simplificada e otimizada para o uso durante a condução. Diferente de um espelhamento tradicional da tela do celular, o Android Auto funciona de forma que o processamento dos dados e execução dos aplicativos ocorre no próprio smartphone, enquanto o display do carro atua como uma interface de controle, exibindo informações e recebendo comandos de toque, voz ou botões físicos.
+
+A conexão entre o smartphone e o sistema do veículo pode ser feita por cabo USB ou, em modelos mais recentes, via conexão sem fio usando Wi-Fi Direct e Bluetooth. A comunicação entre os dispositivos utiliza protocolos específicos, como o Android Open Accessory (AOA) para conexões cabeadas, garantindo a transmissão eficiente de áudio, vídeo e dados de controle com baixa latência.
+
+A plataforma prioriza a segurança e a usabilidade, oferecendo suporte a aplicativos compatíveis como navegação (Google Maps, Waze), música (Spotify, YouTube Music), chamadas telefônicas e mensagens, todos adaptados para minimizar distrações ao motorista. Além disso, o Android Auto possui integração com o Google Assistente, permitindo controle por voz para maior comodidade e segurança.
+
+*Android Auto* e Apple CarPlay vão muito além de um simples espelhamento do smartphone na tela do carro, eles são plataformas projetadas para integrar o sistema móvel com o sistema multimídia do veículo de forma segura, responsiva e otimizada para uso enquanto dirige.
+
+No âmbito técnico, ambos funcionam por meio de uma arquitetura cliente-servidor, onde o smartphone atua como o servidor principal, processando os dados e rodando os apps, enquanto o head unit (a central multimídia do carro) é o cliente que exibe a interface adaptada para o ambiente automotivo. Essa separação permite que o processamento pesado e a lógica fiquem no telefone, enquanto a tela do veículo serve principalmente para entrada e saída de interface de usuário, garantindo baixa latência e melhor performance.
+
+A comunicação entre smartphone e head unit pode ser feita via cabo USB ou, em versões mais recentes, por conexão sem fio via Wi-Fi Direct e Bluetooth. Protocolos específicos são usados para transportar áudio, vídeo e dados de controle, garantindo sincronização e qualidade. No Android Auto, por exemplo, o protocolo de transporte utiliza AOA (Android Open Accessory) quando conectado por cabo e Wi-Fi Direct para wireless, enquanto no CarPlay a Apple utiliza protocolos proprietários baseados em USB e Wi-Fi.
+
+As interfaces são desenvolvidas para serem simples, com poucos elementos e comandos de voz robustos, para minimizar distrações. Ambas as plataformas expõem APIs que permitem aos desenvolvedores criar apps compatíveis, que passam por rígidos processos de certificação para garantir segurança e usabilidade, principalmente em relação ao acesso a funcionalidades como navegação, chamadas, mensagens e mídia.
+
+No geral, não é um “espelhamento” puro como um cast ou screen mirroring — é uma integração profunda e personalizada, onde o smartphone é o cérebro, e a central multimídia é uma tela e interface de controle dedicada, com protocolos especializados que mantêm segurança, baixa latência e melhor experiência de usuário para quem está dirigindo.
+
+# [iOS] CarPlay
+<img src="https://github.com/user-attachments/assets/2a317f77-9210-4361-9a7c-95c3650e9bde" height="77" align="right">
+
+O **Apple CarPlay** é uma plataforma desenvolvida pela Apple que permite a integração do iPhone com o sistema multimídia do veículo, proporcionando uma interface otimizada para uso durante a condução. Diferente de um simples espelhamento da tela do celular, o CarPlay oferece acesso seguro e simplificado a funções essenciais do iPhone, como navegação, chamadas telefônicas, mensagens, música e assistente de voz Siri, tudo adaptado para minimizar distrações ao volante.
+
+Tecnicamente, o CarPlay funciona como uma extensão do iOS, onde o iPhone atua como o “cérebro” que processa as informações, enquanto o sistema do carro exibe a interface e aceita comandos do motorista, seja via toque, botões físicos ou comandos de voz. A comunicação entre o iPhone e o veículo ocorre geralmente por cabo USB, mas muitos carros modernos já suportam CarPlay sem fio, usando conexões Wi-Fi e Bluetooth proprietárias da Apple.
+
+Para garantir segurança e usabilidade, os aplicativos compatíveis com CarPlay precisam seguir diretrizes específicas da Apple e passam por um processo de aprovação. Além disso, o sistema limita o acesso a apps que possam distrair o motorista, privilegiando funções que auxiliam na condução e comunicação de forma intuitiva e segura.
+
 # [Android] Deployment - Google Play Store
 <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_Play_2022_icon.svg" height="77" align="right">
 
@@ -142,33 +170,3 @@ Ao enviar para revisão, você deve configurar a versão, build, notas para revi
 A Apple analisa todo o pacote: binário, metadados, comportamento em execução e conformidade com diretrizes. Revisões normalmente levam entre 24 e 48 horas para contas com histórico bom, mas podem se estender caso haja uso de APIs privadas, problemas de design ou dúvidas sobre conteúdo. Desde 2025, apps que usam **API categories com uso restrito** (como screen recording, SMS auto-fill avançado, background Bluetooth scanning) precisam justificar explicitamente no App Store Connect com “Reasons for API Usage” — essa justificativa é revisada por humanos.
 
 Após aprovação, você pode lançar imediatamente ou agendar. Para reduzir riscos, use o **phased release** da Apple, que libera gradualmente a atualização para uma porcentagem de usuários ao longo de sete dias, permitindo interromper se surgir um bug crítico. Acompanhe métricas no App Analytics e relatórios de falhas no App Store Connect, além de monitorar a recepção dos usuários via reviews.
-
-# [Android] Android Auto
-<img src="https://github.com/user-attachments/assets/7bbe0f28-e750-450c-8e49-6ab14f756423" height="77" align="right">
-
-O **Android Auto** é uma plataforma desenvolvida pelo Google que permite a integração do smartphone Android com o sistema multimídia dos veículos, oferecendo uma interface simplificada e otimizada para o uso durante a condução. Diferente de um espelhamento tradicional da tela do celular, o Android Auto funciona de forma que o processamento dos dados e execução dos aplicativos ocorre no próprio smartphone, enquanto o display do carro atua como uma interface de controle, exibindo informações e recebendo comandos de toque, voz ou botões físicos.
-
-A conexão entre o smartphone e o sistema do veículo pode ser feita por cabo USB ou, em modelos mais recentes, via conexão sem fio usando Wi-Fi Direct e Bluetooth. A comunicação entre os dispositivos utiliza protocolos específicos, como o Android Open Accessory (AOA) para conexões cabeadas, garantindo a transmissão eficiente de áudio, vídeo e dados de controle com baixa latência.
-
-A plataforma prioriza a segurança e a usabilidade, oferecendo suporte a aplicativos compatíveis como navegação (Google Maps, Waze), música (Spotify, YouTube Music), chamadas telefônicas e mensagens, todos adaptados para minimizar distrações ao motorista. Além disso, o Android Auto possui integração com o Google Assistente, permitindo controle por voz para maior comodidade e segurança.
-
-*Android Auto* e Apple CarPlay vão muito além de um simples espelhamento do smartphone na tela do carro, eles são plataformas projetadas para integrar o sistema móvel com o sistema multimídia do veículo de forma segura, responsiva e otimizada para uso enquanto dirige.
-
-No âmbito técnico, ambos funcionam por meio de uma arquitetura cliente-servidor, onde o smartphone atua como o servidor principal, processando os dados e rodando os apps, enquanto o head unit (a central multimídia do carro) é o cliente que exibe a interface adaptada para o ambiente automotivo. Essa separação permite que o processamento pesado e a lógica fiquem no telefone, enquanto a tela do veículo serve principalmente para entrada e saída de interface de usuário, garantindo baixa latência e melhor performance.
-
-A comunicação entre smartphone e head unit pode ser feita via cabo USB ou, em versões mais recentes, por conexão sem fio via Wi-Fi Direct e Bluetooth. Protocolos específicos são usados para transportar áudio, vídeo e dados de controle, garantindo sincronização e qualidade. No Android Auto, por exemplo, o protocolo de transporte utiliza AOA (Android Open Accessory) quando conectado por cabo e Wi-Fi Direct para wireless, enquanto no CarPlay a Apple utiliza protocolos proprietários baseados em USB e Wi-Fi.
-
-As interfaces são desenvolvidas para serem simples, com poucos elementos e comandos de voz robustos, para minimizar distrações. Ambas as plataformas expõem APIs que permitem aos desenvolvedores criar apps compatíveis, que passam por rígidos processos de certificação para garantir segurança e usabilidade, principalmente em relação ao acesso a funcionalidades como navegação, chamadas, mensagens e mídia.
-
-No geral, não é um “espelhamento” puro como um cast ou screen mirroring — é uma integração profunda e personalizada, onde o smartphone é o cérebro, e a central multimídia é uma tela e interface de controle dedicada, com protocolos especializados que mantêm segurança, baixa latência e melhor experiência de usuário para quem está dirigindo.
-
-Se quiser, posso detalhar mais sobre os protocolos de comunicação usados, exemplos de APIs para desenvolvedores, ou até explicar as diferenças entre as versões cabeadas e sem fio dessas tecnologias.
-
-# [iOS] CarPlay
-<img src="https://github.com/user-attachments/assets/2a317f77-9210-4361-9a7c-95c3650e9bde" height="77" align="right">
-
-O **Apple CarPlay** é uma plataforma desenvolvida pela Apple que permite a integração do iPhone com o sistema multimídia do veículo, proporcionando uma interface otimizada para uso durante a condução. Diferente de um simples espelhamento da tela do celular, o CarPlay oferece acesso seguro e simplificado a funções essenciais do iPhone, como navegação, chamadas telefônicas, mensagens, música e assistente de voz Siri, tudo adaptado para minimizar distrações ao volante.
-
-Tecnicamente, o CarPlay funciona como uma extensão do iOS, onde o iPhone atua como o “cérebro” que processa as informações, enquanto o sistema do carro exibe a interface e aceita comandos do motorista, seja via toque, botões físicos ou comandos de voz. A comunicação entre o iPhone e o veículo ocorre geralmente por cabo USB, mas muitos carros modernos já suportam CarPlay sem fio, usando conexões Wi-Fi e Bluetooth proprietárias da Apple.
-
-Para garantir segurança e usabilidade, os aplicativos compatíveis com CarPlay precisam seguir diretrizes específicas da Apple e passam por um processo de aprovação. Além disso, o sistema limita o acesso a apps que possam distrair o motorista, privilegiando funções que auxiliam na condução e comunicação de forma intuitiva e segura.
