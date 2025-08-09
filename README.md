@@ -86,8 +86,38 @@ No desenvolvimento iOS, as práticas de TDD, BDD e DDD também são fundamentais
 Ao combinar essas abordagens, um projeto iOS ganha em qualidade, clareza e alinhamento com o negócio: o DDD orienta a estrutura e modelagem do sistema, o TDD garante a confiabilidade técnica, e o BDD conecta o desenvolvimento ao comportamento esperado pelo usuário.
 
 # [Android] Deployment - Google Play Store
+<img src="" height="77" align="right">
+
+O processo de deployment de um app Android na **Google Play Store** tem alguns pontos técnicos e operacionais importantes que vão além de simplesmente “enviar o APK/AAB e publicar”.
+
+Tecnicamente, o fluxo oficial envolve:
+
+1. **Build de distribuição** — normalmente feito como **Android App Bundle (.aab)**, que é o formato recomendado e exigido para novos apps. O .aab permite ao Google Play gerar APKs otimizados para cada dispositivo, reduzindo tamanho e consumo de banda.
+2. **Configuração no Google Play Console** — onde você define título, descrição, screenshots, categoria, classificação indicativa, permissões, política de privacidade, preço/distribuição geográfica e dados de contato.
+3. **Assinatura do app** — todo app precisa ser assinado com uma chave digital. Hoje, a maioria dos desenvolvedores opta pelo **Play App Signing**, onde o Google gerencia a chave.
+4. **Envio para revisão** — qualquer atualização ou novo app passa por um processo automatizado e manual de análise, verificando políticas de conteúdo, privacidade, segurança e conformidade técnica. Esse processo costuma levar **algumas horas a alguns dias**, dependendo de fatores como histórico da conta e complexidade da mudança.
+5. **Rollout gradual** — é possível liberar a atualização para uma porcentagem do público (staged rollout), ajudando a mitigar riscos de bugs críticos.
+
+Sobre **horários e dias para publicar**, tecnicamente a Play Store aceita deploy em qualquer momento, inclusive sextas-feiras. Mas, no mercado, existe a prática de evitar releases muito perto de fins de semana ou feriados — não por restrição da Google, e sim porque caso ocorra um bug grave, a equipe de suporte e desenvolvimento pode não estar totalmente disponível para corrigir rapidamente.
+
+A **avaliação da Google** não é apenas na publicação inicial: o app é monitorado constantemente. Atualizações podem ser rejeitadas ou o app removido se violar as políticas posteriormente (por exemplo, mudanças de permissão, conteúdo enganoso, coleta de dados sem consentimento). Também há verificações automáticas via **Google Play Protect** em dispositivos dos usuários.
 
 # [iOS] Deployment - Apple App Store
+<img src="https://github.com/user-attachments/assets/0a1c6f5b-8f05-4f1b-967b-ee2f56423b1f" height="77" align="right">
+
+Sobre publicação de apps iOS/iPadOS na **Apple App Store**, cobrindo requisitos técnicos, de políticas, privacidade e mudanças recentes que a Apple vem aplicando. Vou te explicar em blocos corridos, sem listas, para que fique como um guia fluído.
+
+Antes de qualquer build, verifique se o **deployment target** e o SDK usado estão alinhados às exigências mais recentes. Em 2025, novos apps e atualizações devem usar o Xcode mais recente compatível e ter como base de build o **iOS 17 SDK** (ou posterior, conforme lançado). A Apple também exige que apps novos suportem telas de dispositivos atuais (iPhone 15 series e iPad Pro M4, por exemplo) e recursos de segurança modernos como **Privacy Manifests** e **required reason APIs** — onde você precisa declarar por que seu app usa certas APIs sensíveis (como leitura de pasteboard, tracking, sensibilidade a movimento, etc.).
+
+Na preparação do app, compile sempre em **Release** e com otimizações ativas, usando o `Generic iOS Device` no Xcode ou via linha de comando com `xcodebuild archive` e depois `xcodebuild -exportArchive` gerando um `.ipa` assinado com o **Distribution Certificate** e provisionado com um **App Store Provisioning Profile**. Hoje a maioria dos devs faz o upload direto pelo **Xcode Organizer** ou **Transporter** (Mac App Store), que integram com o App Store Connect.
+
+No App Store Connect, crie ou selecione o registro do app, definindo nome, bundle ID (pré-registrado no Apple Developer), SKU, idioma base, ícones e screenshots exigidos — eles precisam atender exatamente aos formatos e resoluções de cada dispositivo suportado. A Apple não aceita screenshots simulados de forma enganosa, então capture telas reais ou montagens fiéis. Inclua também um **App Privacy Report** via Privacy Nutrition Labels, especificando que dados o app coleta, se são ligados à identidade do usuário e como são usados. Desde 2024, a Apple cruza essas declarações com **Privacy Manifests** incluídos no binário, e inconsistências podem resultar em rejeição.
+
+Ao enviar para revisão, você deve configurar a versão, build, notas para revisão (se necessário) e metadados de marketing. Se o app usa **Sign in with Apple** ou coleta dados pessoais, certifique-se de cumprir todas as políticas relacionadas — por exemplo, oferecer opção de exclusão de conta **dentro do próprio app**, conforme regra obrigatória desde junho de 2022. Caso o app use APIs de rastreamento, ative a solicitação de permissão do **AppTrackingTransparency** (ATT) e explique no `NSUserTrackingUsageDescription` o motivo de forma clara e não enganosa.
+
+A Apple analisa todo o pacote: binário, metadados, comportamento em execução e conformidade com diretrizes. Revisões normalmente levam entre 24 e 48 horas para contas com histórico bom, mas podem se estender caso haja uso de APIs privadas, problemas de design ou dúvidas sobre conteúdo. Desde 2025, apps que usam **API categories com uso restrito** (como screen recording, SMS auto-fill avançado, background Bluetooth scanning) precisam justificar explicitamente no App Store Connect com “Reasons for API Usage” — essa justificativa é revisada por humanos.
+
+Após aprovação, você pode lançar imediatamente ou agendar. Para reduzir riscos, use o **phased release** da Apple, que libera gradualmente a atualização para uma porcentagem de usuários ao longo de sete dias, permitindo interromper se surgir um bug crítico. Acompanhe métricas no App Analytics e relatórios de falhas no App Store Connect, além de monitorar a recepção dos usuários via reviews.
 
 # [Android] Android Auto
 <img src="https://github.com/user-attachments/assets/7bbe0f28-e750-450c-8e49-6ab14f756423" height="77" align="right">
