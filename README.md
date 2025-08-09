@@ -55,7 +55,6 @@ Para a parte de interface declarativa, o equivalente ao Jetpack Compose é o **S
 
 Portanto, para cada peça do ecossistema Android que você viu na imagem, há uma contraparte equivalente e integrada no ecossistema iOS, com Xcode, frameworks nativos da Apple, SwiftUI e os pacotes .ipa formando o conjunto de ferramentas necessário para construir, testar e distribuir aplicações iOS profissionais.
 
-
 Podemos construir um aplicativo mobile do zero exatamente como construímos uma interface front-end para web, consumindo os dados e recursos expostos por uma API de um back-end web. Nesse cenário, o app funciona como um cliente que se comunica com servidores remotos por meio de requisições HTTP (ou HTTPS), geralmente no padrão REST ou GraphQL. O aplicativo é responsável por apresentar os dados ao usuário, capturar suas interações e enviar informações de volta ao servidor, exatamente como faria um navegador acessando uma página web dinâmica.
 
 Ao desenvolver esse tipo de app mobile, o front-end é implementado com tecnologias específicas para a plataforma desejada — seja com código nativo (Swift/Objective-C para iOS, Kotlin/Java para Android) ou com frameworks multiplataforma como Flutter, React Native ou Xamarin, que permitem escrever uma única base de código para rodar em ambos os sistemas operacionais. A comunicação com a API web normalmente se dá através de bibliotecas como `fetch` ou `axios` no React Native, `http` no Flutter, `Retrofit` no Android, ou mesmo chamadas assíncronas em Swift usando `URLSession`.
@@ -65,8 +64,26 @@ A API web back-end, por sua vez, pode ser construída com qualquer stack — Nod
 Portanto, sim, desenvolver um app mobile moderno é perfeitamente viável dentro dessa arquitetura desacoplada, em que o aplicativo atua como consumidor de uma API web back-end, fazendo uso dos recursos, dados e funcionalidades expostos remotamente. Esse modelo de arquitetura orientado a serviços é o que sustenta a maioria dos aplicativos que usamos no dia a dia, de redes sociais e bancos a mensageiros e plataformas de streaming.
 
 # [Android] TDD, BDD e DDD
+No desenvolvimento Android, assim como em outras plataformas, as práticas de TDD, BDD e DDD são adotadas para melhorar a qualidade do código, facilitar a manutenção e garantir que o software entregue atenda aos requisitos do negócio, mas cada uma atua em um aspecto diferente do processo de desenvolvimento.
+
+**TDD (Test-Driven Development)** é uma técnica de desenvolvimento onde os testes automatizados são escritos **antes** do código funcional. No contexto Android, isso significa criar primeiro testes unitários para funcionalidades específicas, como métodos de classes ou componentes, e então implementar o código que faça esses testes passarem. Ferramentas como JUnit e Mockito são amplamente usadas para isso. O ciclo típico do TDD é: escrever um teste que falha, implementar o código para passar no teste, refatorar e repetir. Essa abordagem ajuda a garantir que o código seja testável, confiável e modular desde o início.
+
+**BDD (Behavior-Driven Development)** é uma evolução do TDD que enfatiza o comportamento esperado do sistema a partir da perspectiva do usuário ou das partes interessadas. Em Android, BDD pode ser aplicado utilizando frameworks como Cucumber ou Spek, onde os requisitos são expressos em linguagem natural (por exemplo, Gherkin), facilitando o entendimento entre desenvolvedores, testadores e clientes. A ideia é criar cenários que descrevem o comportamento desejado do aplicativo e, a partir desses cenários, desenvolver os testes automatizados correspondentes. Isso promove uma comunicação mais clara e alinhada ao negócio.
+
+**DDD (Domain-Driven Design)** não é uma técnica de teste, mas sim uma abordagem para o design e arquitetura de software que foca na modelagem do domínio de negócio e suas regras. No desenvolvimento Android, DDD ajuda a estruturar o código em camadas bem definidas — por exemplo, domínio, aplicação, infraestrutura e interface — garantindo que a lógica de negócio seja isolada e independente das tecnologias específicas da plataforma. Essa separação facilita a manutenção, evolução e testabilidade do sistema. Princípios do DDD incluem o uso de entidades, agregados, repositórios e serviços de domínio que refletem os conceitos e regras do negócio real.
+
+Juntas, essas práticas criam uma base sólida para o desenvolvimento Android: o DDD orienta a arquitetura e modelagem do sistema, o TDD garante que o código funcione conforme esperado, e o BDD conecta o desenvolvimento aos comportamentos reais desejados pelos usuários e stakeholders.
 
 # [iOS] TDD, BDD e DDD
+No desenvolvimento iOS, as práticas de TDD, BDD e DDD também são fundamentais para criar aplicativos robustos, fáceis de manter e alinhados às necessidades do negócio, cada uma atuando em diferentes aspectos do ciclo de desenvolvimento.
+
+**TDD (Test-Driven Development)** no iOS consiste em escrever testes automatizados — geralmente usando frameworks como XCTest ou Quick/Nimble — **antes** de implementar a funcionalidade propriamente dita. O ciclo típico envolve criar um teste que inicialmente falha, implementar o código para passar no teste, depois refatorar o código para melhorar sua estrutura sem quebrar os testes. Essa prática assegura que o código seja testável desde o início, ajuda a evitar regressões e facilita a manutenção, além de promover um design mais modular e desacoplado.
+
+**BDD (Behavior-Driven Development)** traz uma camada adicional de foco no comportamento do sistema, enfatizando o entendimento e a comunicação clara entre desenvolvedores, testadores e stakeholders. No iOS, frameworks como Cucumberish, Quick e Nimble permitem descrever testes baseados em cenários e comportamentos esperados, muitas vezes usando uma linguagem próxima à natural, facilitando o alinhamento com requisitos de negócio. O BDD ajuda a garantir que o desenvolvimento esteja sempre orientado para entregar funcionalidades que atendam às expectativas do usuário final.
+
+**DDD (Domain-Driven Design)** no contexto iOS refere-se à prática de organizar a arquitetura da aplicação em torno do domínio do negócio, separando claramente as responsabilidades em camadas, como domínio, aplicação, infraestrutura e interface do usuário. Isso facilita a manutenção, teste e evolução do aplicativo, já que a lógica do negócio fica isolada das tecnologias específicas do iOS, como UIKit ou SwiftUI. Usar DDD ajuda a modelar conceitos reais do negócio diretamente no código, criando entidades, agregados e serviços que refletem regras e processos da aplicação.
+
+Ao combinar essas abordagens, um projeto iOS ganha em qualidade, clareza e alinhamento com o negócio: o DDD orienta a estrutura e modelagem do sistema, o TDD garante a confiabilidade técnica, e o BDD conecta o desenvolvimento ao comportamento esperado pelo usuário.
 
 # [Android] Deployment - Google Play Store
 
