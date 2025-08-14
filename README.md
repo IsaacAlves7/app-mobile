@@ -141,6 +141,10 @@ Tecnicamente, o CarPlay funciona como uma extensão do iOS, onde o iPhone atua c
 
 Para garantir segurança e usabilidade, os aplicativos compatíveis com CarPlay precisam seguir diretrizes específicas da Apple e passam por um processo de aprovação. Além disso, o sistema limita o acesso a apps que possam distrair o motorista, privilegiando funções que auxiliam na condução e comunicação de forma intuitiva e segura.
 
+# 💸 [Android] Ads
+
+# 💸 [iOS] Ads
+
 # 🚀 [Android] Deployment - Google Play Store
 <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_Play_2022_icon.svg" height="77" align="right">
 
