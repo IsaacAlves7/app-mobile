@@ -85,7 +85,7 @@ No desenvolvimento iOS, as práticas de TDD, BDD e DDD também são fundamentais
 
 Ao combinar essas abordagens, um projeto iOS ganha em qualidade, clareza e alinhamento com o negócio: o DDD orienta a estrutura e modelagem do sistema, o TDD garante a confiabilidade técnica, e o BDD conecta o desenvolvimento ao comportamento esperado pelo usuário.
 
-# [Android] Android Auto
+# 🚙 [Android] Android Auto
 <img src="https://github.com/user-attachments/assets/7bbe0f28-e750-450c-8e49-6ab14f756423" height="77" align="right">
 
 O **Android Auto** é uma plataforma desenvolvida pelo Google que permite a integração do smartphone Android com o sistema multimídia dos veículos, oferecendo uma interface simplificada e otimizada para o uso durante a condução. Diferente de um espelhamento tradicional da tela do celular, o Android Auto funciona de forma que o processamento dos dados e execução dos aplicativos ocorre no próprio smartphone, enquanto o display do carro atua como uma interface de controle, exibindo informações e recebendo comandos de toque, voz ou botões físicos.
@@ -104,7 +104,7 @@ As interfaces são desenvolvidas para serem simples, com poucos elementos e coma
 
 No geral, não é um “espelhamento” puro como um cast ou screen mirroring — é uma integração profunda e personalizada, onde o smartphone é o cérebro, e a central multimídia é uma tela e interface de controle dedicada, com protocolos especializados que mantêm segurança, baixa latência e melhor experiência de usuário para quem está dirigindo.
 
-# [iOS] CarPlay
+# 🚙 [iOS] CarPlay
 <img src="https://github.com/user-attachments/assets/2a317f77-9210-4361-9a7c-95c3650e9bde" height="77" align="right">
 
 O **Apple CarPlay** é uma plataforma desenvolvida pela Apple que permite a integração do iPhone com o sistema multimídia do veículo, proporcionando uma interface otimizada para uso durante a condução. Diferente de um simples espelhamento da tela do celular, o CarPlay oferece acesso seguro e simplificado a funções essenciais do iPhone, como navegação, chamadas telefônicas, mensagens, música e assistente de voz Siri, tudo adaptado para minimizar distrações ao volante.
@@ -113,7 +113,7 @@ Tecnicamente, o CarPlay funciona como uma extensão do iOS, onde o iPhone atua c
 
 Para garantir segurança e usabilidade, os aplicativos compatíveis com CarPlay precisam seguir diretrizes específicas da Apple e passam por um processo de aprovação. Além disso, o sistema limita o acesso a apps que possam distrair o motorista, privilegiando funções que auxiliam na condução e comunicação de forma intuitiva e segura.
 
-# [Android] Deployment - Google Play Store
+# 🚀 [Android] Deployment - Google Play Store
 <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_Play_2022_icon.svg" height="77" align="right">
 
 O processo de deployment de um app Android na **Google Play Store** tem alguns pontos técnicos e operacionais importantes que vão além de simplesmente “enviar o APK/AAB e publicar”.
@@ -154,7 +154,7 @@ Processo de submissão e tempo de revisão / riscos: submeta o AAB no track dese
 
 Casos comuns de rejeição e boas práticas para evitá-los: revisar todas as chamadas de rede para garantir a divulgação no Data Safety, remover trackers desnecessários ou justificar seu uso, remover funcionalidades que possam ser consideradas “deceptive behavior” (p.ex. mimetizar avisos do sistema), evitar pedir permissões sensíveis sem a UX/justificativa clara e internações de usuário; mantenha a política de privacidade no app e no store listing, documente retenção e criptografia e mantenha logs/artefatos que provem conformidade caso o Play solicite auditoria. 
 
-# [iOS] Deployment - Apple App Store
+# 🚀 [iOS] Deployment - Apple App Store
 <img src="https://github.com/user-attachments/assets/0a1c6f5b-8f05-4f1b-967b-ee2f56423b1f" height="77" align="right">
 
 Sobre publicação de apps iOS/iPadOS na **Apple App Store**, cobrindo requisitos técnicos, de políticas, privacidade e mudanças recentes que a Apple vem aplicando. Vou te explicar em blocos corridos, sem listas, para que fique como um guia fluído.
