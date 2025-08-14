@@ -144,6 +144,8 @@ Tecnicamente, o CarPlay funciona como uma extensão do iOS, onde o iPhone atua c
 Para garantir segurança e usabilidade, os aplicativos compatíveis com CarPlay precisam seguir diretrizes específicas da Apple e passam por um processo de aprovação. Além disso, o sistema limita o acesso a apps que possam distrair o motorista, privilegiando funções que auxiliam na condução e comunicação de forma intuitiva e segura.
 
 # 💸 [Android] Ads
+<img src="https://www.vectorlogo.zone/logos/google_admob/google_admob-ar21.svg" align="right" height="77">
+
 No Android, **Ads** (anúncios) são recursos de monetização onde você exibe publicidade no seu aplicativo em troca de receita, geralmente paga por impressão (CPM), clique (CPC) ou ações específicas (CPA). O provedor mais usado é o **Google AdMob**, mas existem alternativas como Facebook Audience Network, Unity Ads e AppLovin. O AdMob é integrado ao Google Ad Manager, permitindo que você use anúncios da rede do Google e parceiros. 
 
 Para implementar, você precisa primeiro criar uma conta no [AdMob](https://admob.google.com), registrar seu aplicativo (informando nome e plataforma), e gerar os IDs de anúncios (App ID e Ad Unit ID) para cada formato que for utilizar, como **Banner Ads** (fixos e pequenos na parte superior/inferior), **Interstitial Ads** (tela cheia em transições de tela), **Rewarded Ads** (anúncios em vídeo onde o usuário recebe recompensa, como moeda virtual ou bônus), e **Native Ads** (anúncios que se adaptam ao layout do seu app). 
