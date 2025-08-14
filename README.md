@@ -61,7 +61,35 @@ Ao desenvolver esse tipo de app mobile, o front-end é implementado com tecnolog
 
 A API web back-end, por sua vez, pode ser construída com qualquer stack — Node.js, Django, ASP.NET, Spring Boot, Rails, entre outros — e tem a função de armazenar, processar e entregar dados ao app, além de lidar com autenticação, autorização, persistência e lógica de negócio. A separação entre front-end (app mobile) e back-end (API) torna o sistema mais escalável, modular e reutilizável. É possível, inclusive, que a mesma API sirva múltiplos clientes: o app mobile, um painel web, uma aplicação de desktop ou até outras APIs e serviços.
 
-Portanto, sim, desenvolver um app mobile moderno é perfeitamente viável dentro dessa arquitetura desacoplada, em que o aplicativo atua como consumidor de uma API web back-end, fazendo uso dos recursos, dados e funcionalidades expostos remotamente. Esse modelo de arquitetura orientado a serviços é o que sustenta a maioria dos aplicativos que usamos no dia a dia, de redes sociais e bancos a mensageiros e plataformas de streaming.
+Portanto, sim, desenvolver um app mobile moderno é perfeitamente viável dentro dessa arquitetura desacoplada, em que o aplicativo atua como consumidor de uma API web back-end, fazendo uso dos recursos, dados e funcionalidades expostos remotamente. Esse modelo de arquitetura orientado a serviços (SOA) é o que sustenta a maioria dos aplicativos que usamos no dia a dia, de redes sociais e bancos a mensageiros e plataformas de streaming.
+
+Fazendo uma analogia e uma comparação entre Web e Mobile:
+
+Em aplicações web costuma-se usar o termo **componente** (`component`), especialmente em frameworks modernos como React, Vue ou Angular.
+
+Aplicações mobile cada plataforma/framework tem seu termo próprio:
+
+- Flutter → chama tudo de **widget**.
+
+- React Native → o termo usado é componente, igual na Web (porque o React Native é baseado no React). Mas esses componentes não geram HTML/CSS — eles mapeiam para elementos nativos da plataforma (Views do Android, UIViews do iOS).
+
+- Android nativo → chama de **View** e **ViewGroup**.
+
+- iOS UIKit → chama de **UIView**.
+
+- iOS SwiftUI → usa **View** (que é conceitualmente igual a widget).
+
+Ou seja, "widget" é o termo do Flutter (e historicamente também usado no Android para alguns controles), mas a ideia é praticamente a mesma de "componente" na web.
+
+Comparação de equivalência:
+
+| Conceito geral       | Web (React, Vue, Angular) | Flutter                           | Android Nativo | iOS UIKit           | iOS SwiftUI    |
+| -------------------- | ------------------------- | --------------------------------- | -------------- | ------------------- | -------------- |
+| Unidade básica da UI | Componente                | Widget                            | View           | UIView              | View           |
+| Estrutura de layout  | Componente (div, section) | Widget (`Row`, `Column`, `Stack`) | ViewGroup      | UIView + AutoLayout | VStack, HStack |
+| Elemento de texto    | `<p>`, `<span>`           | `Text`                            | `TextView`     | `UILabel`           | `Text`         |
+| Botão                | `<button>`                | `ElevatedButton`, `TextButton`    | `Button`       | `UIButton`          | `Button`       |
+
 
 # 🧪 [Android] TDD, BDD e DDD
 No desenvolvimento Android, assim como em outras plataformas, as práticas de TDD, BDD e DDD são adotadas para melhorar a qualidade do código, facilitar a manutenção e garantir que o software entregue atenda aos requisitos do negócio, mas cada uma atua em um aspecto diferente do processo de desenvolvimento.
