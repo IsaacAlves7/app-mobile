@@ -19,7 +19,7 @@ Hoje, o desenvolvimento mobile não se limita a smartphones. Ele se estende para
 
 <img src="https://cdn.worldvectorlogo.com/logos/apple-13.svg" height="77" align="right">
 
-Desenvolver aplicativos mobile de forma nativa oferece vantagens significativas de performance em comparação ao desenvolvimento multiplataforma híbrido. Quando se desenvolve de forma nativa — usando Kotlin ou Java para _Android_ e **Swift** ou **Objective-C** para **iOS** — o código é compilado diretamente para o sistema operacional, o que proporciona acesso total aos recursos do dispositivo, melhor otimização de memória, renderização mais fluida e menor tempo de resposta. Isso se reflete em transições mais suaves, menor latência em animações, carregamento mais rápido de dados e, principalmente, em uma experiência do usuário mais consistente com o sistema.
+Desenvolver aplicativos mobile de forma nativa oferece vantagens significativas de performance em comparação ao desenvolvimento multiplataforma híbrido. Quando se desenvolve de forma nativa, usando Kotlin ou Java para _Android_, e **Swift** ou **Objective-C** para **iOS** o código é compilado diretamente para o sistema operacional, o que proporciona acesso total aos recursos do dispositivo, melhor otimização de memória, renderização mais fluida e menor tempo de resposta. Isso se reflete em transições mais suaves, menor latência em animações, carregamento mais rápido de dados e, principalmente, em uma experiência do usuário mais consistente com o sistema.
 
 Por outro lado, as soluções híbridas — como aquelas construídas com **Ionic**, **Cordova**, ou até algumas abordagens do **React Native** ou **Flutter** em modo bridge — embora ofereçam ganho em produtividade por permitir a escrita de um único código para várias plataformas, ainda sofrem com certas limitações. Isso inclui maior consumo de recursos, maior tempo de inicialização da aplicação e mais dependência de bridges entre o código JavaScript/Dart e o código nativo, o que pode introduzir gargalos de desempenho, especialmente em aplicativos que exigem acesso intensivo a sensores, câmera, Bluetooth ou operações gráficas pesadas.
 
@@ -142,6 +142,17 @@ Tecnicamente, o CarPlay funciona como uma extensão do iOS, onde o iPhone atua c
 Para garantir segurança e usabilidade, os aplicativos compatíveis com CarPlay precisam seguir diretrizes específicas da Apple e passam por um processo de aprovação. Além disso, o sistema limita o acesso a apps que possam distrair o motorista, privilegiando funções que auxiliam na condução e comunicação de forma intuitiva e segura.
 
 # 💸 [Android] Ads
+No Android, **Ads** (anúncios) são recursos de monetização onde você exibe publicidade no seu aplicativo em troca de receita, geralmente paga por impressão (CPM), clique (CPC) ou ações específicas (CPA). O provedor mais usado é o **Google AdMob**, mas existem alternativas como Facebook Audience Network, Unity Ads e AppLovin. O AdMob é integrado ao Google Ad Manager, permitindo que você use anúncios da rede do Google e parceiros. 
+
+Para implementar, você precisa primeiro criar uma conta no [AdMob](https://admob.google.com), registrar seu aplicativo (informando nome e plataforma), e gerar os IDs de anúncios (App ID e Ad Unit ID) para cada formato que for utilizar, como **Banner Ads** (fixos e pequenos na parte superior/inferior), **Interstitial Ads** (tela cheia em transições de tela), **Rewarded Ads** (anúncios em vídeo onde o usuário recebe recompensa, como moeda virtual ou bônus), e **Native Ads** (anúncios que se adaptam ao layout do seu app). 
+
+Em seguida, no seu projeto Android (Java/Kotlin ou React Native), você instala o SDK do Google Mobile Ads. No Android nativo, isso envolve adicionar no `build.gradle` o repositório Maven do Google e a dependência `com.google.android.gms:play-services-ads:<versão>`, configurar no `AndroidManifest.xml` a permissão de internet e o App ID do AdMob, e inicializar o SDK no `onCreate` da sua `MainActivity` com `MobileAds.initialize(this)`. 
+
+Depois, você implementa o tipo de anúncio desejado instanciando a view ou classe correspondente, passando o `AdRequest` (pode conter segmentação como localização, idade, interesses) e chamando `loadAd()` para carregar. Em produção, você usa o ID real do Ad Unit; em desenvolvimento, o Google exige que você use IDs de teste para evitar violação de políticas. Também é preciso seguir as diretrizes de posicionamento, frequência e não induzir cliques, pois o AdMob pode suspender sua conta por comportamento inválido. 
+
+Em React Native, você pode usar bibliotecas como `react-native-google-mobile-ads`, que encapsulam o SDK nativo; nesse caso, instala-se via `npm` ou `yarn`, executa-se `npx pod-install` para iOS (se também for usar) e faz-se a configuração nos arquivos Android como no app nativo, usando os componentes prontos `BannerAd`, `InterstitialAd` ou `RewardedAd` no código JavaScript/TypeScript. 
+
+O ganho com Ads depende de fatores como localização do usuário, engajamento, nicho do app e formato escolhido, mas a regra é que anúncios em tela cheia ou recompensados geram mais receita por impressão, enquanto banners rendem menos, mas são menos invasivos. Se quiser otimizar, é comum fazer testes A/B com posicionamento e formato, além de acompanhar métricas no painel do AdMob para ajustar a estratégia de monetização.
 
 # 💸 [iOS] Ads
 
