@@ -63,7 +63,7 @@ A API web back-end, por sua vez, pode ser construída com qualquer stack — Nod
 
 Portanto, sim, desenvolver um app mobile moderno é perfeitamente viável dentro dessa arquitetura desacoplada, em que o aplicativo atua como consumidor de uma API web back-end, fazendo uso dos recursos, dados e funcionalidades expostos remotamente. Esse modelo de arquitetura orientado a serviços é o que sustenta a maioria dos aplicativos que usamos no dia a dia, de redes sociais e bancos a mensageiros e plataformas de streaming.
 
-# [Android] TDD, BDD e DDD
+# 🧪 [Android] TDD, BDD e DDD
 No desenvolvimento Android, assim como em outras plataformas, as práticas de TDD, BDD e DDD são adotadas para melhorar a qualidade do código, facilitar a manutenção e garantir que o software entregue atenda aos requisitos do negócio, mas cada uma atua em um aspecto diferente do processo de desenvolvimento.
 
 **TDD (Test-Driven Development)** é uma técnica de desenvolvimento onde os testes automatizados são escritos **antes** do código funcional. No contexto Android, isso significa criar primeiro testes unitários para funcionalidades específicas, como métodos de classes ou componentes, e então implementar o código que faça esses testes passarem. Ferramentas como JUnit e Mockito são amplamente usadas para isso. O ciclo típico do TDD é: escrever um teste que falha, implementar o código para passar no teste, refatorar e repetir. Essa abordagem ajuda a garantir que o código seja testável, confiável e modular desde o início.
@@ -74,7 +74,7 @@ No desenvolvimento Android, assim como em outras plataformas, as práticas de TD
 
 Juntas, essas práticas criam uma base sólida para o desenvolvimento Android: o DDD orienta a arquitetura e modelagem do sistema, o TDD garante que o código funcione conforme esperado, e o BDD conecta o desenvolvimento aos comportamentos reais desejados pelos usuários e stakeholders.
 
-# [iOS] TDD, BDD e DDD
+# 🧪 [iOS] TDD, BDD e DDD
 No desenvolvimento iOS, as práticas de TDD, BDD e DDD também são fundamentais para criar aplicativos robustos, fáceis de manter e alinhados às necessidades do negócio, cada uma atuando em diferentes aspectos do ciclo de desenvolvimento.
 
 **TDD (Test-Driven Development)** no iOS consiste em escrever testes automatizados — geralmente usando frameworks como XCTest ou Quick/Nimble — **antes** de implementar a funcionalidade propriamente dita. O ciclo típico envolve criar um teste que inicialmente falha, implementar o código para passar no teste, depois refatorar o código para melhorar sua estrutura sem quebrar os testes. Essa prática assegura que o código seja testável desde o início, ajuda a evitar regressões e facilita a manutenção, além de promover um design mais modular e desacoplado.
