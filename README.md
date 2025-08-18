@@ -1,4 +1,4 @@
-<div align="center"><a href="https://github.com/IsaacAlves7/app-mobile"><img src="https://github.com/user-attachments/assets/f50df354-4399-4ebf-8dcb-ce672de81dbc" width="100%"></a></div>
+<div align="center"><a href="https://github.com/IsaacAlves7/app-mobile"><img src="https://github.com/user-attachments/assets/f50df354-4399-4ebf-8dcb-ce672de81dbc" width="100%"></a></div><br />
 
 > Versículo chave: "Consagre ao Senhor tudo o que você faz, e os seus planos serão bem-sucedidos." - Provérbios 16:3
 
