@@ -1,11 +1,11 @@
 <div align="center"><a href="https://github.com/IsaacAlves7/app-mobile"><img src="https://github.com/user-attachments/assets/f50df354-4399-4ebf-8dcb-ce672de81dbc" width="100%"></a></div>
 
-<img src="https://cdn.worldvectorlogo.com/logos/android-4.svg" height="77" align="right">
+> Versículo chave: "Consagre ao Senhor tudo o que você faz, e os seus planos serão bem-sucedidos." - Provérbios 16:3
 
 # It's a repository of App Mobile development 📱
 <a href="https://javascript.info"><img src="https://img.shields.io/badge/Figma-prototyping-tomato?style=flat&logo=Figma&logoColor=white"></a> <a href="https://github.com/ryanmcdermott/clean-code-javascript"><img src="https://img.shields.io/badge/Mural-templates-tomato?style=flat&logo=Mural&logoColor=white"></a> <a href="https://github.com/ryanmcdermott/clean-code-javascript"><img src="https://img.shields.io/badge/Moqups-metrics-blue?style=flat&logo=Moqups&logoColor=white"></a> <a href="https://github.com/ryanmcdermott/clean-code-javascript"><img src="https://img.shields.io/badge/Android-metrics-3DDC84?style=flat&logo=Android&logoColor=white"></a> <a href="https://github.com/ryanmcdermott/clean-code-javascript"><img src="https://img.shields.io/badge/iOS-metrics-000000?style=flat&logo=Apple&logoColor=white"></a> <a href=""><img src="https://img.shields.io/badge/Firebase-metrics-DD2C00?style=flat&logo=Firebase&logoColor=white"></a>
 
-> Versículo chave: "Consagre ao Senhor tudo o que você faz, e os seus planos serão bem-sucedidos." - Provérbios 16:3
+<img src="https://cdn.worldvectorlogo.com/logos/android-4.svg" height="77" align="right">
 
 O **desenvolvimento mobile** teve início com a popularização dos primeiros dispositivos móveis capazes de executar software além das funções básicas de chamada e mensagens. No final dos anos 1990 e início dos anos 2000, aparelhos como o Palm Pilot e os primeiros smartphones com Symbian OS já permitiam a execução de aplicativos simples, muitas vezes desenvolvidos por empresas específicas para tarefas corporativas como agenda, e-mail e planilhas. 
 
