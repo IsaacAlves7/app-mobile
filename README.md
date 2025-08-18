@@ -117,25 +117,13 @@ O **iOS** também segue um modelo de arquitetura em camadas, mas a Apple não ex
 
 De forma resumida, o iOS é dividido em 4 camadas principais:
 
-1. **Core OS (Kernel Layer)**
+1. **Core OS (Kernel Layer)**: Base do sistema, onde está o kernel Darwin (derivado do Unix/BSD + Mach microkernel). Lida com drivers, segurança, comunicação entre processos, memória, rede, Bluetooth, etc. Essa camada se comunica diretamente com o hardware.
 
-   * Base do sistema, onde está o kernel Darwin (derivado do Unix/BSD + Mach microkernel).
-   * Lida com drivers, segurança, comunicação entre processos, memória, rede, Bluetooth, etc.
-   * Essa camada se comunica diretamente com o hardware.
+2. **Core Services**: Fornece APIs fundamentais para aplicativos, como Core Foundation, SQLite, segurança (Keychain, certificados), redes, localização, etc.
 
-2. **Core Services**
+3. **Media Layer**: Frameworks para áudio, vídeo, gráficos e animações (Core Graphics, Core Animation, AVFoundation, Metal, etc.).
 
-   * Fornece APIs fundamentais para aplicativos, como Core Foundation, SQLite, segurança (Keychain, certificados), redes, localização, etc.
-
-3. **Media Layer**
-
-   * Frameworks para áudio, vídeo, gráficos e animações (Core Graphics, Core Animation, AVFoundation, Metal, etc.).
-
-4. **Cocoa Touch (ou UIKit Layer)**
-
-   * Camada mais próxima do desenvolvedor.
-   * Inclui UIKit, Foundation, multitasking, notificações, gestos, etc.
-   * É onde os apps interagem com os recursos do sistema.
+4. **Cocoa Touch (ou UIKit Layer)**: Camada mais próxima do desenvolvedor. Inclui UIKit, Foundation, multitasking, notificações, gestos, etc. É onde os apps interagem com os recursos do sistema.
 
 Onde entra o HAL no iOS? No Android, existe explicitamente o **HAL (Hardware Abstraction Layer)** — uma ponte entre o kernel Linux e o framework Android. No **iOS**, essa camada é integrada ao **Core OS + IOKit**.
 
