@@ -99,6 +99,58 @@ Comparação de equivalência:
 | Elemento de texto    | `<p>`, `<span>`           | `Text`                            | `TextView`     | `UILabel`           | `Text`         |
 | Botão                | `<button>`                | `ElevatedButton`, `TextButton`    | `Button`       | `UIButton`          | `Button`       |
 
+# 📱 [Android] Arquitetura do Sistema
+O **Android HAL (Hardware Abstraction Layer)** é a camada de abstração de hardware do sistema Android. Ela funciona como um intermediário entre o **kernel do Linux / drivers do hardware** e as **APIs de alto nível do Android** que os apps usam.
+
+Pensa assim: quando um aplicativo Android acessa a câmera, o GPS, o Wi-Fi ou o áudio, ele não fala diretamente com os drivers de hardware (que são complexos, escritos em C/C++ e específicos de cada fabricante). Em vez disso, ele chama as **APIs do framework Android** (Java/Kotlin), que por sua vez falam com a HAL. Essa camada traduz as chamadas genéricas do sistema para comandos específicos que o driver entende, garantindo que o mesmo Android possa rodar em hardwares de diferentes fabricantes sem que cada app precise conhecer os detalhes da implementação.
+
+A HAL é organizada em **módulos**. Cada tipo de hardware (ex.: câmera, áudio, Bluetooth, sensores) tem seu próprio módulo HAL definido por interfaces. O fabricante do dispositivo implementa essas interfaces para o seu hardware específico. Quando o Android sobe, ele carrega essas implementações e passa a ter suporte àquele hardware.
+
+Um ponto importante: desde o Android 8 (Oreo), a HAL passou a ser definida via **HIDL (HAL Interface Definition Language)**, e no Android 11 começou a migração para **AIDL (Android Interface Definition Language)**. Isso padronizou ainda mais a forma como as interfaces são declaradas e facilitou a modularização do sistema (Projeto Treble).
+
+Resumindo: o Android HAL é o que garante que **um mesmo Android consiga rodar em hardwares diferentes**, abstraindo as diferenças e permitindo que apps usem recursos como câmera, GPS e áudio de forma padronizada, sem depender de cada fabricante.
+
+Esqueminha em camadas: (App → Framework → HAL → Kernel → Hardware)
+
+# 📱 [iOS] Arquitetura do Sistema
+O **iOS** também segue um modelo de arquitetura em camadas, mas a Apple não expõe diretamente um *HAL* (Hardware Abstraction Layer) como o Android faz. Vamos por partes:
+
+De forma resumida, o iOS é dividido em 4 camadas principais:
+
+1. **Core OS (Kernel Layer)**
+
+   * Base do sistema, onde está o kernel Darwin (derivado do Unix/BSD + Mach microkernel).
+   * Lida com drivers, segurança, comunicação entre processos, memória, rede, Bluetooth, etc.
+   * Essa camada se comunica diretamente com o hardware.
+
+2. **Core Services**
+
+   * Fornece APIs fundamentais para aplicativos, como Core Foundation, SQLite, segurança (Keychain, certificados), redes, localização, etc.
+
+3. **Media Layer**
+
+   * Frameworks para áudio, vídeo, gráficos e animações (Core Graphics, Core Animation, AVFoundation, Metal, etc.).
+
+4. **Cocoa Touch (ou UIKit Layer)**
+
+   * Camada mais próxima do desenvolvedor.
+   * Inclui UIKit, Foundation, multitasking, notificações, gestos, etc.
+   * É onde os apps interagem com os recursos do sistema.
+
+Onde entra o HAL no iOS? No Android, existe explicitamente o **HAL (Hardware Abstraction Layer)** — uma ponte entre o kernel Linux e o framework Android. No **iOS**, essa camada é integrada ao **Core OS + IOKit**.
+
+* O **IOKit** é um framework orientado a objetos em C++ que serve justamente como o “HAL” do iOS/macOS.
+* Ele define como o kernel interage com drivers de dispositivos (câmera, áudio, Wi-Fi, Bluetooth, touchscreen, etc.).
+* Isso significa que o iOS **não chama diretamente os drivers**, mas usa o IOKit, que funciona como a camada de abstração.
+
+Portanto:
+
+* O **HAL no iOS ≈ Core OS (Kernel + IOKit + drivers)**.
+* Ele não é modular e exposto como no Android (onde fabricantes podem implementar partes do HAL).
+* No ecossistema Apple, **a Apple controla todo o hardware + software**, então não há necessidade de um HAL "aberto"; o IOKit já faz essa abstração de forma fechada.
+* **iOS HAL = IOKit (parte do Core OS)**.
+* Ele cuida da abstração de hardware, mas de forma privada e integrada, sem customização externa.
+
 # 🗺️ [Android] Maps
 
 # 🗺️ [iOS] Maps
