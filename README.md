@@ -202,7 +202,7 @@ A conexão entre o smartphone e o sistema do veículo pode ser feita por cabo US
 
 A plataforma prioriza a segurança e a usabilidade, oferecendo suporte a aplicativos compatíveis como navegação (Google Maps, Waze), música (Spotify, YouTube Music), chamadas telefônicas e mensagens, todos adaptados para minimizar distrações ao motorista. Além disso, o Android Auto possui integração com o Google Assistente, permitindo controle por voz para maior comodidade e segurança.
 
-*Android Auto* e Apple CarPlay vão muito além de um simples espelhamento do smartphone na tela do carro, eles são plataformas projetadas para integrar o sistema móvel com o sistema multimídia do veículo de forma segura, responsiva e otimizada para uso enquanto dirige.
+*Android Auto* e Apple CarPlay vão muito além de um simples espelhamento do smartphone na tela do carro (screen cast), eles são plataformas projetadas para integrar o sistema móvel com o sistema multimídia do veículo de forma segura, responsiva e otimizada para uso enquanto dirige. Na verdade eles são sistemas embarcados de integração e comunicação em tempo real entre o veículo e o dispositivo móvel.
 
 No âmbito técnico, ambos funcionam por meio de uma arquitetura cliente-servidor, onde o smartphone atua como o servidor principal, processando os dados e rodando os apps, enquanto o head unit (a central multimídia do carro) é o cliente que exibe a interface adaptada para o ambiente automotivo. Essa separação permite que o processamento pesado e a lógica fiquem no telefone, enquanto a tela do veículo serve principalmente para entrada e saída de interface de usuário, garantindo baixa latência e melhor performance.
 
