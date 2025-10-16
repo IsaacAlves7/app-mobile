@@ -291,7 +291,7 @@ Casos comuns de rejeição e boas práticas para evitá-los: revisar todas as ch
 # 🚀 [iOS] Deployment - Apple App Store
 <img src="https://github.com/user-attachments/assets/0a1c6f5b-8f05-4f1b-967b-ee2f56423b1f" height="77" align="right">
 
-Sobre publicação de apps iOS/iPadOS na **Apple App Store**, cobrindo requisitos técnicos, de políticas, privacidade e mudanças recentes que a Apple vem aplicando. Vou te explicar em blocos corridos, sem listas, para que fique como um guia fluído.
+Sobre publicação de apps iOS/iPadOS na **Apple App Store**, cobrindo requisitos técnicos, de políticas, privacidade e mudanças recentes que a Apple vem aplicando. Siga os passos abaixo:
 
 Antes de qualquer build, verifique se o **deployment target** e o SDK usado estão alinhados às exigências mais recentes. Em 2025, novos apps e atualizações devem usar o Xcode mais recente compatível e ter como base de build o **iOS 17 SDK** (ou posterior, conforme lançado). A Apple também exige que apps novos suportem telas de dispositivos atuais (iPhone 15 series e iPad Pro M4, por exemplo) e recursos de segurança modernos como **Privacy Manifests** e **required reason APIs** — onde você precisa declarar por que seu app usa certas APIs sensíveis (como leitura de pasteboard, tracking, sensibilidade a movimento, etc.).
 
