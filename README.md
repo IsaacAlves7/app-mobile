@@ -28,6 +28,8 @@ Com o tempo, surgiram novos desafios e demandas: performance, usabilidade, compa
 
 Hoje, o desenvolvimento mobile não se limita a smartphones. Ele se estende para wearables, TVs, carros, dispositivos IoT, realidade aumentada, pagamentos móveis, entre outros. As tecnologias continuam avançando com promessas como 5G, edge computing e inteligência artificial embarcada, que permitirão experiências ainda mais responsivas, integradas e personalizadas. O futuro do desenvolvimento mobile é promissor, e a tendência é que ele se torne ainda mais onipresente, sofisticado e essencial para o relacionamento entre marcas, usuários e dispositivos inteligentes em todas as esferas da vida.
 
+O uso de Machine Learning em dispositivos móveis está aumentando, mas desenvolvedores que conseguem criar aplicações impulsionadas por ML são muito raros. Portanto, este é o momento perfeito para aprimorar suas habilidades.
+
 <img src="https://cdn.worldvectorlogo.com/logos/apple-13.svg" height="77" align="right">
 
 Desenvolver aplicativos mobile de forma nativa oferece vantagens significativas de performance em comparação ao desenvolvimento multiplataforma híbrido. Quando se desenvolve de forma nativa, usando Kotlin ou Java para _Android_, e **Swift** ou **Objective-C** para **iOS** o código é compilado diretamente para o sistema operacional, o que proporciona acesso total aos recursos do dispositivo, melhor otimização de memória, renderização mais fluida e menor tempo de resposta. Isso se reflete em transições mais suaves, menor latência em animações, carregamento mais rápido de dados e, principalmente, em uma experiência do usuário mais consistente com o sistema.
