@@ -103,6 +103,10 @@ Comparação de equivalência:
 | Elemento de texto    | `<p>`, `<span>`           | `Text`                            | `TextView`     | `UILabel`           | `Text`         |
 | Botão                | `<button>`                | `ElevatedButton`, `TextButton`    | `Button`       | `UIButton`          | `Button`       |
 
+Se você desenvolve apps móveis multiplataformas ou nativos, você precisa conhecer UI/UX Design para melhor experiência do usuário nos seus aplicativos:
+
+![08f2deac9f4c4605382e24faa9633530](https://github.com/user-attachments/assets/fb5387b4-d531-40e1-9b9f-d20b99679363)
+
 # 📱 [Android] Arquitetura do Sistema
 O **Android HAL (Hardware Abstraction Layer)** é a camada de abstração de hardware do sistema Android. Ela funciona como um intermediário entre o **kernel do Linux / drivers do hardware** e as **APIs de alto nível do Android** que os apps usam.
 
