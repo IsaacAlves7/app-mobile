@@ -180,6 +180,8 @@ Um aspecto importante é a forma como o iOS gerencia o consumo de bateria. O Cor
 No conjunto, o iOS combina hardware de localização, camadas de abstração fechadas e otimizadas, frameworks poderosos como Core Location e MapKit e um sistema rígido de permissões e privacidade. O resultado é um ecossistema em que o desenvolvedor consegue trabalhar de forma relativamente simples com funcionalidades sofisticadas de geolocalização, rastreamento e navegação, enquanto o sistema operacional se encarrega da fusão de dados e da proteção da experiência e privacidade do usuário.
 
 # 🧪 [Android] TDD, BDD e DDD
+<img src="https://github.com/user-attachments/assets/b94f1b8a-e568-4155-8e0e-25ccc326356f" align="right" height="177">
+
 No desenvolvimento Android, assim como em outras plataformas, as práticas de TDD, BDD e DDD são adotadas para melhorar a qualidade do código, facilitar a manutenção e garantir que o software entregue atenda aos requisitos do negócio, mas cada uma atua em um aspecto diferente do processo de desenvolvimento.
 
 **TDD (Test-Driven Development)** é uma técnica de desenvolvimento onde os testes automatizados são escritos **antes** do código funcional. No contexto Android, isso significa criar primeiro testes unitários para funcionalidades específicas, como métodos de classes ou componentes, e então implementar o código que faça esses testes passarem. Ferramentas como JUnit e Mockito são amplamente usadas para isso. O ciclo típico do TDD é: escrever um teste que falha, implementar o código para passar no teste, refatorar e repetir. Essa abordagem ajuda a garantir que o código seja testável, confiável e modular desde o início.
