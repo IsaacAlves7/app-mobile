@@ -224,6 +224,26 @@ As interfaces são desenvolvidas para serem simples, com poucos elementos e coma
 
 No geral, não é um “espelhamento” puro como um cast ou screen mirroring — é uma integração profunda e personalizada, onde o smartphone é o cérebro, e a central multimídia é uma tela e interface de controle dedicada, com protocolos especializados que mantêm segurança, baixa latência e melhor experiência de usuário para quem está dirigindo.
 
+O Android Auto foi projetado para impedir qualquer tipo de reprodução de vídeo enquanto o carro está em movimento, exatamente por motivos de segurança. Ele não aceita players externos, não lê pendrive para vídeo e não permite instalação de apps tipo VLC, MX Player, Kodi, etc. A limitação não é técnica, é proposital: o sistema é fechado para evitar distrações ao volante e violaria as políticas da Google liberar isso.
+
+Por isso, *qualquer método que prometa “desbloquear vídeo no Android Auto” hoje envolve bypass, modificação, APK adulterado, root ou alterações no sistema do carro*, todas práticas que eu não posso orientar e que, além de inseguras, colocam você como responsável legal se algo acontecer. Tecnologicamente, a Google tem fechado cada vez mais esses vetores desde 2022, então mesmo as velhas gambiarras que funcionavam com versões antigas do AA nem funcionam mais.
+
+Agora, entrando no que você pode fazer LEGALMENTE e sem riscos, inclusive usando seu pendrive:
+
+Você pode usar o **Modo de Projeção via USB do próprio carro**, mas isso depende do modelo. Alguns carros têm sistema nativo no multimídia que permite abrir vídeos diretamente de pendrive (sem ser Android Auto). A maioria dos sistemas automotivos das montadoras tem o próprio player multimídia independente do Android Auto. Nesse caso, basta colocar seus vídeos no pendrive em um formato aceito pelo multimídia (geralmente MP4, H.264) e abrir pelo player original do carro. Mas isso só funciona com o sistema da montadora, não com o Android Auto. A diferença é crucial: *Android Auto é só espelhamento/controle de apps aprovados; o player do carro é outra coisa*.
+
+Se o seu multimídia tiver essa função, você pode assistir filmes enquanto parado (estacionado, motor desligado ou com freio de mão acionado, dependendo da regra do fabricante). Isso é totalmente permitido e seguro.
+
+Se você quer assistir filmes enquanto **não está dirigindo**, existem alternativas totalmente dentro das regras:
+
+Você pode usar o recurso “**Projeção sem fio**” (Android Auto Wireless) e simplesmente assistir no celular ou tablet com suporte, porque quando você não está usando Android Auto, o dispositivo funciona normal. Isso é perfeito para esperar alguém no carro, mas não tem integração com a tela do multimídia.
+
+Você pode usar um **dongle HDMI para a entrada do carro**, caso seu carro tenha entrada auxiliar de vídeo (raríssimo hoje em dia). Aí você liga um Chromecast, Fire TV Stick ou até seu celular via adaptador HDMI → USB/C, e assiste no multimídia, mas isso não envolve Android Auto. É outra rota, totalmente separada do ambiente fechado do AA.
+
+Você pode assistir no celular fixado no suporte, usando o pendrive no celular com um adaptador OTG, e pronto: o celular vira o player. De novo, isso é separado do Android Auto e é totalmente permitido enquanto você está parado.
+
+Resumindo tudo de forma clara: Android Auto **não permite vídeo** e nunca vai permitir, porque esse é o propósito do sistema. Se seu objetivo é usar filmes no carro, a jogada é usar **o player nativo do carro**, o **celular via OTG**, ou algum **dispositivo HDMI externo** — mas nunca o Android Auto em si, porque ele bloqueia tudo.
+
 # 🚙 [iOS] CarPlay
 <img src="https://github.com/user-attachments/assets/2a317f77-9210-4361-9a7c-95c3650e9bde" height="77" align="right">
 
