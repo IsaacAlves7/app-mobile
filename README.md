@@ -44,9 +44,11 @@ Portanto, embora o desenvolvimento híbrido tenha seu espaço pela agilidade e r
 
 As ferramentas mostradas na imagem são componentes fundamentais do ecossistema de desenvolvimento Android mantido pelo Google, cada uma com uma função específica no processo de criação, construção e publicação de aplicativos móveis. Elas representam as tecnologias e práticas modernas recomendadas para criar aplicações Android eficientes, modulares e com experiência de usuário fluida.
 
-<img src="https://user-images.githubusercontent.com/61624336/215551549-e4417fe8-c7bf-4df0-a3f9-dfad656fef85.png" height="227" align="right">
+<img src="https://github.com/user-attachments/assets/026c6da1-c31f-4e10-98ab-e5fb2d0cfba7" align="right" height="77">
 
 O **Android Studio** é o ambiente de desenvolvimento integrado (IDE) oficial para o desenvolvimento Android. Baseado no IntelliJ IDEA, ele fornece uma interface completa para escrever, testar e depurar aplicativos. Com suporte total a Kotlin e Java, além de ferramentas como o emulador Android, o Android Studio facilita a criação de interfaces, a visualização de layouts e a análise de desempenho, reunindo tudo que o desenvolvedor precisa em um único lugar.
+
+<img src="https://user-images.githubusercontent.com/61624336/215551549-e4417fe8-c7bf-4df0-a3f9-dfad656fef85.png">
 
 O **Android Jetpack** é um conjunto de bibliotecas, ferramentas e guias de arquitetura que ajudam a construir aplicativos robustos, reutilizáveis e de fácil manutenção. Ele inclui componentes como LiveData, ViewModel, Navigation, Room e WorkManager, que abstraem tarefas complexas do ciclo de vida da aplicação, persistência de dados e navegação entre telas, promovendo boas práticas como separação de responsabilidades e desacoplamento de camadas.
 
