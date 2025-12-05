@@ -110,7 +110,7 @@ Se você desenvolve apps móveis multiplataformas ou nativos, você precisa conh
 ![511555964-fb5387b4-d531-40e1-9b9f-d20b99679363](https://github.com/user-attachments/assets/86998fcf-af92-404d-a95d-a968fbfe3883)
 
 # 📱 [Android] Arquitetura do Sistema
-<img height="480" align="right" src="https://github.com/user-attachments/assets/a20f9fe7-0a1f-4a44-af17-0e733c460b81" />
+<img height="277" align="right" src="https://github.com/user-attachments/assets/a20f9fe7-0a1f-4a44-af17-0e733c460b81" />
 
 O **Android HAL (Hardware Abstraction Layer)** é a camada de abstração de hardware do sistema Android. Ela funciona como um intermediário entre o **kernel do Linux / drivers do hardware** e as **APIs de alto nível do Android** que os apps usam.
 
