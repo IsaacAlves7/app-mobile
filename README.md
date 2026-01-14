@@ -186,7 +186,7 @@ Um aspecto importante é a forma como o iOS gerencia o consumo de bateria. O Cor
 
 No conjunto, o iOS combina hardware de localização, camadas de abstração fechadas e otimizadas, frameworks poderosos como Core Location e MapKit e um sistema rígido de permissões e privacidade. O resultado é um ecossistema em que o desenvolvedor consegue trabalhar de forma relativamente simples com funcionalidades sofisticadas de geolocalização, rastreamento e navegação, enquanto o sistema operacional se encarrega da fusão de dados e da proteção da experiência e privacidade do usuário.
 
-# 🧱 [Android] MVC, MVP, MVVM, VIPER Patterns
+# 🧱 [Android] Architectural Patterns
 O que diferencia os padrões de arquitetura MVC, MVP, MVVM, MVVM-C e VIPER entre si?
 
 ![unnamed](https://github.com/user-attachments/assets/ec9ff36f-adcd-4b23-bab4-1272a2c55ea4)
@@ -203,7 +203,7 @@ Esses padrões de arquitetura estão entre os mais comumente usados no desenvolv
 
 - Esses tradutores podem ser bastante complexos de escrever, então vários padrões foram propostos para torná-los mais fáceis de manter
 
-# 🧱 [iOS] MVC, MVP, MVVM, VIPER Patterns
+# 🧱 [iOS] Architectural Patterns
 O que diferencia os padrões de arquitetura MVC, MVP, MVVM, MVVM-C e VIPER entre si?
 
 ![unnamed](https://github.com/user-attachments/assets/9077f840-6488-45b0-922c-3707f483f6a1)
