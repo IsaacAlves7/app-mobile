@@ -203,6 +203,8 @@ Esses padrões de arquitetura estão entre os mais comumente usados no desenvolv
 
 - Esses tradutores podem ser bastante complexos de escrever, então vários padrões foram propostos para torná-los mais fáceis de manter
 
+https://substack.com/redirect/21962053-e375-484a-b56f-9336985e9fb6?j=eyJ1IjoiMmRpcmZwIn0.DgQpD9vnxeDXnbOGqr5r4QICWGtxf2wFAnKNG8yY6Aw
+
 # 🧱 [iOS] Architectural Patterns
 O que diferencia os padrões de arquitetura MVC, MVP, MVVM, MVVM-C e VIPER entre si?
 
