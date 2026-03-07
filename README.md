@@ -226,7 +226,7 @@ Esses padrões de arquitetura estão entre os mais comumente usados no desenvolv
 
 - Esses tradutores podem ser bastante complexos de escrever, então vários padrões foram propostos para torná-los mais fáceis de manter
 
-# 🧪 [Android] TDD, BDD e DDD
+# 🧪 [Android] DDD, TDD e BDD
 <img src="https://github.com/user-attachments/assets/b94f1b8a-e568-4155-8e0e-25ccc326356f" align="right" height="177">
 
 No desenvolvimento Android, assim como em outras plataformas, as práticas de TDD, BDD e DDD são adotadas para melhorar a qualidade do código, facilitar a manutenção e garantir que o software entregue atenda aos requisitos do negócio, mas cada uma atua em um aspecto diferente do processo de desenvolvimento.
@@ -239,7 +239,7 @@ No desenvolvimento Android, assim como em outras plataformas, as práticas de TD
 
 Juntas, essas práticas criam uma base sólida para o desenvolvimento Android: o DDD orienta a arquitetura e modelagem do sistema, o TDD garante que o código funcione conforme esperado, e o BDD conecta o desenvolvimento aos comportamentos reais desejados pelos usuários e stakeholders.
 
-# 🧪 [iOS] TDD, BDD e DDD
+# 🧪 [iOS] DDD, TDD e BDD
 No desenvolvimento iOS, as práticas de TDD, BDD e DDD também são fundamentais para criar aplicativos robustos, fáceis de manter e alinhados às necessidades do negócio, cada uma atuando em diferentes aspectos do ciclo de desenvolvimento.
 
 **DDD (Domain-Driven Design)** no contexto iOS refere-se à prática de organizar a arquitetura da aplicação em torno do domínio do negócio, separando claramente as responsabilidades em camadas, como domínio, aplicação, infraestrutura e interface do usuário. Isso facilita a manutenção, teste e evolução do aplicativo, já que a lógica do negócio fica isolada das tecnologias específicas do iOS, como UIKit ou SwiftUI. Usar DDD ajuda a modelar conceitos reais do negócio diretamente no código, criando entidades, agregados e serviços que refletem regras e processos da aplicação.
