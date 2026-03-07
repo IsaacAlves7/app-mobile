@@ -110,7 +110,11 @@ Comparação de equivalência:
 
 Se você desenvolve apps móveis multiplataformas ou nativos, você precisa conhecer UI/UX Design para melhor experiência do usuário nos seus aplicativos:
 
-![511555964-fb5387b4-d531-40e1-9b9f-d20b99679363](https://github.com/user-attachments/assets/86998fcf-af92-404d-a95d-a968fbfe3883)
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/86998fcf-af92-404d-a95d-a968fbfe3883"></td>
+  </tr>
+</table>
 
 # 📱 [Android] Arquitetura do Sistema
 <img height="177" align="right" src="https://github.com/user-attachments/assets/a20f9fe7-0a1f-4a44-af17-0e733c460b81" />
