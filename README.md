@@ -6,6 +6,7 @@
 <div align="center"><a href="https://github.com/IsaacAlves7/app-mobile"><img src="https://github.com/user-attachments/assets/f50df354-4399-4ebf-8dcb-ce672de81dbc" width="100%"></a></div><br />
 
 > Versículo chave: "Consagre ao Senhor tudo o que você faz, e os seus planos serão bem-sucedidos." - Provérbios 16:3
+
 # It's a repository of App Mobile development 📱
 <a href="https://javascript.info"><img src="https://img.shields.io/badge/Figma-prototyping-tomato?style=flat&logo=Figma&logoColor=white"></a> <a href="https://github.com/ryanmcdermott/clean-code-javascript"><img src="https://img.shields.io/badge/Mural-templates-tomato?style=flat&logo=Mural&logoColor=white"></a> <a href="https://github.com/ryanmcdermott/clean-code-javascript"><img src="https://img.shields.io/badge/Moqups-metrics-blue?style=flat&logo=Moqups&logoColor=white"></a> <a href="https://github.com/ryanmcdermott/clean-code-javascript"><img src="https://img.shields.io/badge/Android-metrics-3DDC84?style=flat&logo=Android&logoColor=white"></a> <a href="https://github.com/ryanmcdermott/clean-code-javascript"><img src="https://img.shields.io/badge/iOS-metrics-000000?style=flat&logo=Apple&logoColor=white"></a> <a href=""><img src="https://img.shields.io/badge/Firebase-metrics-DD2C00?style=flat&logo=Firebase&logoColor=white"></a>
 
@@ -113,8 +114,44 @@ Se você desenvolve apps móveis multiplataformas ou nativos, você precisa conh
 <table>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/86998fcf-af92-404d-a95d-a968fbfe3883"></td>
+    <td><img src="https://github.com/user-attachments/assets/f5153a2c-cea7-493f-98c3-11be2aebda52"></td>
   </tr>
 </table>
+
+Como Lançar um Aplicativo Móvel: O processo de lançamento de aplicativos móveis difere dos métodos convencionais. Esta ilustração simplifica a jornada para ajudar você a entender.
+
+Etapas Típicas do Processo de Lançamento de Um Aplicativo Móvel:
+
+Registro e Desenvolvimento (iOS & Android):
+- Inscreva-se no Programa de Desenvolvedores da Apple e no Google Play Console como desenvolvedor
+iOS e Android - Código usando ferramentas específicas da plataforma: Swift/Obj-C para iOS e Java/Kotlin para Android
+
+Build & Test (iOS & Android):
+Compile o binário do app, realize testes extensos em ambas as plataformas para garantir funcionalidade e desempenho. Crie uma build candidata a lançamento.
+
+QA:
+- Teste interno do app para identificação de problemas (dogfooding)
+- Teste beta com usuários externos para coletar feedback
+- Realização de testes de regressão para manter a estabilidade das funcionalidades
+
+Aprovações Internas:
+- Obtenha aprovação das partes interessadas e dos membros-chave da equipe.
+- Cumprir as diretrizes da loja de aplicativos e regulamentos
+do setor - Obter aprovações de segurança para proteger os dados e a privacidade dos usuários
+
+Otimização para App Store (ASO):
+- Otimize metadados, incluindo títulos, descrições e palavras-chave, para melhor visibilidade
+nas buscas - Crie capturas de tela e ícones envolventes para atrair os usuários
+- Prepare notas de lançamento envolventes para informar os usuários sobre novos recursos e atualizações
+
+Envio do App para a Loja:
+- Submeta o app iOS via App Store Connect seguindo as diretrizes
+da Apple - Submeta o app Android pelo Google Play Console, seguindo as políticas
+do Google - Ambas as plataformas podem solicitar a resolução de questões para aprovação
+
+Lançamento: Após aprovação, defina uma data de lançamento para coordenar o lançamento tanto nas plataformas iOS quanto Android
+
+> A conversa é sua: Qual foi a fase mais desafiadora que você já enfrentou no processo de lançamento do aplicativo móvel?
 
 # 📱 [Android] Arquitetura do Sistema
 <img height="177" align="right" src="https://github.com/user-attachments/assets/a20f9fe7-0a1f-4a44-af17-0e733c460b81" />
