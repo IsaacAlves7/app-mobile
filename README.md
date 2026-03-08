@@ -113,6 +113,10 @@ Se você desenvolve apps móveis multiplataformas ou nativos, você precisa conh
 
 <table>
   <tr>
+    <td>UI/UX Design</td>
+    <td>CI/CD Pipeline</td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/user-attachments/assets/86998fcf-af92-404d-a95d-a968fbfe3883" height="677"></td>
     <td><img src="https://github.com/user-attachments/assets/f5153a2c-cea7-493f-98c3-11be2aebda52" height="677"></td>
   </tr>
