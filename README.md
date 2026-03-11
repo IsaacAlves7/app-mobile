@@ -122,6 +122,8 @@ Se você desenvolve apps móveis multiplataformas ou nativos, você precisa conh
   </tr>
 </table>
 
+https://substack.com/redirect/68d89dd5-1191-44e4-aea6-2fa5541c5061?j=eyJ1IjoiMmRpcmZwIn0.DgQpD9vnxeDXnbOGqr5r4QICWGtxf2wFAnKNG8yY6Aw
+
 Como Lançar um Aplicativo Móvel: O processo de lançamento de aplicativos móveis difere dos métodos convencionais. Esta ilustração simplifica a jornada para ajudar você a entender.
 
 Etapas Típicas do Processo de Lançamento de Um Aplicativo Móvel:
