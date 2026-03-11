@@ -358,6 +358,8 @@ Em React Native, você pode usar bibliotecas como `react-native-google-mobile-ad
 
 O ganho com Ads depende de fatores como localização do usuário, engajamento, nicho do app e formato escolhido, mas a regra é que anúncios em tela cheia ou recompensados geram mais receita por impressão, enquanto banners rendem menos, mas são menos invasivos. Se quiser otimizar, é comum fazer testes A/B com posicionamento e formato, além de acompanhar métricas no painel do AdMob para ajustar a estratégia de monetização.
 
+![Screenshot_20240801-115642_Instagram](https://github.com/user-attachments/assets/12038f35-46b8-487c-821d-b6667a50dd02)
+
 # 💸 [iOS] Ads
 <img src="https://www.vectorlogo.zone/logos/google_admob/google_admob-ar21.svg" align="right" height="77">
 
@@ -368,6 +370,8 @@ O funcionamento dos anúncios em iOS depende da integração dos SDKs das plataf
 Com o ATT, quando o usuário nega o rastreamento, o app não pode acessar o IDFA nem compartilhar dados de navegação para criar perfis publicitários. Isso fez com que muitas plataformas tivessem que investir em soluções de medição mais centradas em privacidade, como a agregação de dados anônimos e a utilização do SKAdNetwork, um framework da Apple que fornece relatórios de atribuição de anúncios sem expor a identidade do usuário. O SKAdNetwork permite que anunciantes saibam se um clique em um anúncio resultou na instalação de um aplicativo, mas entrega apenas informações limitadas, como janelas de tempo e alguns dados de campanha, sem rastreamento granular. Essa abordagem protege a privacidade e mantém o controle do ecossistema publicitário nas mãos da Apple, reforçando sua postura de se diferenciar de concorrentes mais permissivos em relação ao uso de dados pessoais.
 
 Na prática, isso significa que os desenvolvedores de apps para iOS precisam equilibrar a monetização via anúncios com a conformidade às diretrizes de privacidade, ajustando suas estratégias de aquisição e retenção de usuários. Aplicativos que dependem de publicidade recompensada, como jogos free-to-play, continuam podendo usar formatos tradicionais, mas com menor poder de segmentação do que antes. Já empresas que querem investir em visibilidade na App Store contam com o Apple Search Ads como um meio oficial e seguro, integrado ao ecossistema. Assim, a publicidade em iOS não desapareceu, mas passou por um processo de transformação em que o foco se deslocou da exploração agressiva de dados para modelos mais transparentes e controlados pelo sistema.
+
+![Screenshot_20240801-115642_Instagram](https://github.com/user-attachments/assets/015d84c7-c552-4d5f-ae2b-637fc02a77ec)
 
 # 🚀 [Android] Deployment - Google Play Store
 <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_Play_2022_icon.svg" height="77" align="right">
