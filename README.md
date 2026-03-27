@@ -159,6 +159,125 @@ Lançamento: Após aprovação, defina uma data de lançamento para coordenar o 
 
 > A conversa é sua: Qual foi a fase mais desafiadora que você já enfrentou no processo de lançamento do aplicativo móvel?
 
+Section 3 
+● Lecture 6 Android Studio 
+○ https://developer.android.com/studio 
+○ Move extracted android studio to path: 
+■ mv <download path> <destination path> 
+○ Run android studio: 
+○ Go to <destination path> and run:  ./studio.sh 
+● Lecture 9 ADB 
+○ Go to adb shell path: 
+■ cd  <home>/Android/Sdk/platform-tools 
+○ Run adb shell: 
+■ adb shell  
+● Lecture 10 Apktool 
+○ Install apktool 
+■ sudo apt-get install apktool  
+● Lecture 11 JD-GUI/Enjarify 
+○ http://java-decompiler.github.io/ 
+○ https://github.com/google/enjarify 
+○ Run jdgui: 
+■ java -jar <path to jdgui> 
+○ Run enjarify on apk: 
+■ ./enjarify.sh <path to apk> 
+● Lecture 12 Bytecodeviewer 
+○ https://bytecodeviewer.com/ 
+● Lecture 13 Androguard 
+○ Install androguard 
+■ sudo apt install androguard 
+● Lecture 14 Objection 
+○ https://github.com/sensepost/objection 
+○ Pre-requisites: 
+■ sudo apt install zipalign 
+■ https://ibotpeaches.github.io/Apktool/ 
+■ Follow installation instructions 
+○ Install objection 
+■ pip3 install -U objection 
+● Lecture 15 Tamer 
+○ https://androidtamer.com/ 
+● General: make sure you have your environment variables configured for: 
+■ Jdk bin 
+■ Sdk platform tools path (Android/Sdk/platform-tools) 
+■ Sdk tools path (Android/Sdk/tools) 
+■ Sdk emulator path (Android/Sdk/emulator) 
+■ Path to apktool 
+■ Path to objection (should be done automatically with objection install 
+script)  
+Section 5 
+● Lecture 32 ADB 
+○ adb commands 
+■ adb devices 
+■ touch myfile.txt 
+■ adb push myfile.txt /sdcard/ 
+■ adb pull /sdcard/myfile.txt 
+■ adb shell 
+● pm list package 
+● pm list package ​ | grep flipcortex 
+● exit 
+○ Download apk extractor 
+■ Eg: ​https://m.apkpure.com/apk-extractor/com.ext.ui 
+○ Drag and drop onto emulator 
+○ Extract APK 
+○ Pull apk 
+■ Adb pull <path to extracted apk> 
+■ Eg:  
+adb pull 
+/storage/emulated/0/ExtractedApks/Helloworld_com.flipcortex.helloworld.
+apk 
+● Lecture 33 Static Analysis: APKtool 
+○ Rename apk to flipcortex.apk 
+■ mv <apk path> flipcortex.apk 
+○ Run apktool on app 
+■ apktool d flipcortex.apk 
+○ Open manifest/layout 
+■ cd flipcortex 
+■ nano AndroidManifest.xml 
+■ nano /res/layout/activity_main 
+○ Find postman-echo 
+■ grep -r postman-echo 
+● Lecture 34 Static Analysis: Bytecodeviewer 
+○ Run bytecodeviewer 
+○ java -jar <path to bytecodeviewer)  
+● Lecture 35 Static Analysis: Androguard 
+○ Run apk on androguard 
+■ androguard analyze flipcortex.apk 
+○ Run analysis commands 
+■ a.get_permissions() 
+■ a.get_receivers() 
+● Lecture 36 Dynamic Analysis: Objection 
+○ Run objection against app 
+■ objection patchapk --source <path to apk> --gadget-version 12.7.24 
+○ Install new apk 
+■ adb install <path to new generated apk> 
+○ Run app 
+○ Run objection 
+■ Objection explort 
+○ Hook onto method 
+■ android hooking watch class_method 
+com.flipcortex.helloworld.SmsReceiver.httpPost --dump-args --dump-backtrace --dump-return 
+○ Send sms to analysis device 
+Section 6 
+● Lecture 42 Simplocker: Running on Emulator 
+○ DISABLE NETWORK 
+○ Run emaultor 
+■ Go to Android/Sdk/emulator 
+■ ./emulator <name of emulator> 
+○ Enable SD card 
+○ Pull image 
+■ adb pull /sdcard/Pictures/DemoPicture.jpg 
+○ DISABLE NETWORK 
+○ Install simplocker 
+■ adb install <path to simplocker> 
+○ Uninstall simplocker 
+■ adb uninstall org.simplelocker 
+○ Pull encrypted file 
+■ adb pull /sdcard/Pictures/DemoPicture.jpg.enc 
+● Lecture 43  Simplocker: Static Analysis 
+○ Run enjarify on app 
+■ cd <enjarify path> 
+■ ./enjarify.sh <path to simplocker> 
+
 # 📱 [Android] Arquitetura do Sistema
 <img height="177" align="right" src="https://github.com/user-attachments/assets/a20f9fe7-0a1f-4a44-af17-0e733c460b81" />
 
