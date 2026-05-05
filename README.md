@@ -157,6 +157,10 @@ do Google - Ambas as plataformas podem solicitar a resolução de questões para
 
 Lançamento: Após aprovação, defina uma data de lançamento para coordenar o lançamento tanto nas plataformas iOS quanto Android
 
+<img width="1136" height="886" alt="rere" src="https://github.com/user-attachments/assets/65f5d030-7ffd-461b-86ab-9eba8c93b8b3" />
+
+<img width="1560" height="962" alt="re" src="https://github.com/user-attachments/assets/8d525bf0-8547-4f06-9da7-cb3e2bf413fe" />
+
 > A conversa é sua: Qual foi a fase mais desafiadora que você já enfrentou no processo de lançamento do aplicativo móvel?
 
 Section 3 
