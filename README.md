@@ -161,6 +161,8 @@ Lançamento: Após aprovação, defina uma data de lançamento para coordenar o 
 
 <img width="1560" height="962" alt="re" src="https://github.com/user-attachments/assets/8d525bf0-8547-4f06-9da7-cb3e2bf413fe" />
 
+<img width="1080" height="444" alt="unnamed" src="https://github.com/user-attachments/assets/eb4563ab-5022-4f03-8c54-dd2cf63bea02" />
+
 > A conversa é sua: Qual foi a fase mais desafiadora que você já enfrentou no processo de lançamento do aplicativo móvel?
 
 Section 3 
