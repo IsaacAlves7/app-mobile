@@ -1,0 +1,6 @@
+<resources>
+    <color name="android_green">#3DDC84</color>
+    <color name="kotlin_purple">#7F52FF</color>
+    <color name="background_dark">#0D1117</color>
+    <color name="surface_dark">#161B22</color>
+</resources>

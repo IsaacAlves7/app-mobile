@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GitHub Stars</string>
+    <string name="search_hint">Filtrar por linguagem (ex.: kotlin)</string>
+    <string name="loading">Carregando repositórios mais impressionantes…</string>
+    <string name="error_generic">Não foi possível carregar os dados. Puxe para tentar novamente.</string>
+    <string name="empty_state">Nenhum repositório encontrado.</string>
+    <string name="stars_label">%1$s estrelas</string>
+    <string name="forks_label">%1$s forks</string>
+</resources>
