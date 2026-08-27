@@ -378,6 +378,8 @@ Esses padrões de arquitetura estão entre os mais comumente usados no desenvolv
 https://substack.com/redirect/21962053-e375-484a-b56f-9336985e9fb6?j=eyJ1IjoiMmRpcmZwIn0.DgQpD9vnxeDXnbOGqr5r4QICWGtxf2wFAnKNG8yY6Aw
 
 # 🧱 [iOS] Architectural Patterns
+<img width="104" height="48" alt="68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d73776966742c6170706c65267468656d653d6c69676874" src="https://github.com/user-attachments/assets/bfeb1083-c004-4ce6-9092-d8441eb1738c" />
+
 O que diferencia os padrões de arquitetura MVC, MVP, MVVM, MVVM-C e VIPER entre si?
 
 ![unnamed](https://github.com/user-attachments/assets/9077f840-6488-45b0-922c-3707f483f6a1)
